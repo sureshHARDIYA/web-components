@@ -5,6 +5,7 @@ import { trygTheme } from "@/theme";
 import Agenda from "./slides/Agenda";
 import template from "./theme/template";
 import { TrygSlide } from "@/components/TrygSlide";
+import FreshComponent from "./slides/FeshComponent";
 import GettingStarted from "./slides/GettingStarted";
 import ProjectStructure from "./slides/ProjectStructure";
 
@@ -41,6 +42,9 @@ function App() {
 
       {/* Slide -4 */}
       <ProjectStructure />
+
+      {/* Slide -5 */}
+      <FreshComponent />
     </Deck>
   );
 }
