@@ -1,17 +1,19 @@
-import { CodePane, SlideLayout } from "spectacle";
+import { Appear, CodePane, SlideLayout } from "spectacle";
 
 const LeftComponet = () => {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <h1 className="text-4xl font-bold">Left Component</h1>
+    <div className="flex flex-col items-center justify-center  text-black">
+      <h1 className="text-4xl font-bold">A new web component</h1>
     </div>
   );
 };
 
 const RightComponet = () => {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <h1 className="text-4xl font-bold">RightComponet Component</h1>
+    <div className="flex flex-col items-center justify-center  text-black">
+      <Appear>
+        <h1 className="text-4xl font-bold">Right Component</h1>
+      </Appear>
     </div>
   );
 };
