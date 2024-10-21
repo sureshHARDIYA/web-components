@@ -1,19 +1,34 @@
-import { Appear, ListItem, OrderedList, CodeSpan } from "spectacle";
+import { Appear, ListItem, OrderedList, CodePane } from "spectacle";
+
+import codeTheme from "./codeTheme";
 
 const GettingStarted = () => {
   return (
     <>
-      <OrderedList>
+      <OrderedList className="bg-green">
         <Appear>
-          <ListItem>Elements can animate in!</ListItem>
+          <StyledListItem>
+            Make sure you have <kbd>npm</kbd> proxy configured.
+          </StyledListItem>
+          <CodePane language="bash" theme={codeTheme as any}>
+            {`  
+           registry = "https://dkdc2supdevw002.prd1.prdroot.net:9443/nexus/content/groups/npm-all"
+           strict-ssl = false
+            `}
+          </CodePane>
         </Appear>
         <Appear>
-          <ListItem>Out of order</ListItem>
+          <StyledListItem>
+            Clone <kbd>trygno-ui</kbd> repository.
+          </StyledListItem>
+          <CodePane language="bash" theme={codeTheme as any}>
+            {`git clone https://gitlab.devops.prdroot.net/service/jee/change-calculator/trygno-ui.git`}
+          </CodePane>
         </Appear>
-        <Appear priority={0}>
-          <ListItem>
-            Just identify the order with the prop <CodeSpan>priority</CodeSpan>!
-          </ListItem>
+        <Appear>
+          <StyledListItem>
+            And that's it. Start creating web-component.
+          </StyledListItem>
         </Appear>
       </OrderedList>
     </>
@@ -21,3 +36,7 @@ const GettingStarted = () => {
 };
 
 export default GettingStarted;
+
+const StyledListItem = ({ children }: any) => (
+  <ListItem className="text-black list-decimal">{children}</ListItem>
+);

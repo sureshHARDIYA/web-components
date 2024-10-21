@@ -6,6 +6,7 @@ import Agenda from "./slides/Agenda";
 import template from "./theme/template";
 import { TrygSlide } from "@/components/TrygSlide";
 import GettingStarted from "./slides/GettingStarted";
+import ProjectStructure from "./slides/ProjectStructure";
 
 const theme = {
   fonts: {
@@ -37,6 +38,9 @@ function App() {
       >
         <GettingStarted />
       </TrygSlide>
+
+      {/* Slide -4 */}
+      <ProjectStructure />
     </Deck>
   );
 }
