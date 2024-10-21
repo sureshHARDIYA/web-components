@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { Tree } from "react-arborist";
 import { CodePane, SlideLayout } from "spectacle";
+import { RiFolderOpenFill } from "react-icons/ri";
+import { PiFileJsxBold } from "react-icons/pi";
 
-import code from "./trygno-input.tsx?raw";
+import code from "./trygno-input.txt?raw";
 import codeTheme from "@/slides/codeTheme";
 
 const data = [
@@ -99,7 +101,19 @@ function Node({ node, style, dragHandle, setShowCode }: any) {
 
   return (
     <div style={style} ref={dragHandle} onClick={handleClick}>
-      {node.isLeaf ? "📄 " : "📁 "} {node.data.name}
+      <div className="flex justify-start gap-1 items-center hover:bg-gray-200">
+        {node.isLeaf ? (
+          <div className="flex justify-start gap-1 items-center hover:bg-gray-200">
+            <PiFileJsxBold className="text-green-500  mr-2" />
+            {node.data.name}
+          </div>
+        ) : (
+          <div className="flex justify-start gap-1 items-center hover:bg-gray-200 cursor-pointer">
+            <RiFolderOpenFill className="text-yellow-500  mr-2" />
+            {node.data.name}
+          </div>
+        )}
+      </div>
     </div>
   );
 }
