@@ -4,6 +4,7 @@ import Title from "./slides/Title";
 import { trygTheme } from "@/theme";
 import Agenda from "./slides/Agenda";
 import template from "./theme/template";
+import AddingProps from "./slides/AddingProps";
 import { TrygSlide } from "@/components/TrygSlide";
 import FreshComponent from "./slides/FeshComponent";
 import GettingStarted from "./slides/GettingStarted";
@@ -45,6 +46,11 @@ function App() {
 
       {/* Slide -5 */}
       <FreshComponent />
+
+      {/* Slide -6 Adding Props */}
+      <TrygSlide title="Adding Properties">
+        <AddingProps />
+      </TrygSlide>
     </Deck>
   );
 }
