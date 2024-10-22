@@ -1,4 +1,5 @@
 import ReactDiffViewer from "react-diff-viewer";
+import { Appear, CodePane } from "spectacle";
 
 const oldCode = `
  import { Component, Host, h } from '@stencil/core';
@@ -35,6 +36,7 @@ export class MyCustomInput {
   render() {
     return (
       <Host>
+        <slot></slot>
         <input name={this.name} type={this.type} />
       </Host>
     );
@@ -46,6 +48,9 @@ const AddingProps = () => {
   return (
     <div className="text-black">
       <ReactDiffViewer oldValue={oldCode} newValue={newCode} splitView={true} />
+      <Appear>
+        <CodePane language="html">{`<my-custom-input>This is my custom string.</my-custom-input> `}</CodePane>
+      </Appear>
     </div>
   );
 };
