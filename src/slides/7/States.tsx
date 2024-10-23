@@ -1,6 +1,5 @@
 import { Appear, CodePane } from "spectacle";
 import tomorrow from "react-syntax-highlighter/dist/cjs/styles/prism/tomorrow";
-import App from "@/App";
 
 // Clone and modify the tomorrow theme
 const customTheme = {

@@ -1,7 +1,4 @@
-import styled from "styled-components";
 import { Heading, Slide, Link } from "spectacle";
-
-import { trygTheme } from "../theme";
 
 export const TrygSlide = ({
   children,
@@ -21,7 +18,16 @@ export const TrygSlide = ({
         <Heading margin="0px" padding={titlePadding} fontSize="42px">
           {title}
           {readMoreLink && (
-            <StyledLink href={readMoreLink}>[Read More...]</StyledLink>
+            <Link
+              href={readMoreLink}
+              style={{
+                fontSize: "14px",
+                marginLeft: "1rem",
+                color: "#dc0000",
+              }}
+            >
+              [Read More...]
+            </Link>
           )}
         </Heading>
       )}
@@ -29,9 +35,3 @@ export const TrygSlide = ({
     </Slide>
   );
 };
-
-const StyledLink = styled(Link)`
-  color: ${trygTheme.brand};
-  font-size: 14px;
-  margin-left: 1rem;
-`;
