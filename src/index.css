@@ -15,3 +15,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Add this to your global CSS file */
+.spectacle-code-pane pre, .spectacle-code-pane code {
+  line-height: 1.2 !important; /* Force line-height to 1.2 */
+}
