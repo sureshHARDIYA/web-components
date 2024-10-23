@@ -57,6 +57,57 @@ function App() {
       <TrygSlide title="The State Decorator (@State)" titlePadding="1rem">
         <StateSlide />
       </TrygSlide>
+
+      {/* Slide -8 Life Cycle */}
+      <TrygSlide
+        title="Component Lifecycle Methods"
+        titlePadding="1rem"
+        readMoreLink="https://stenciljs.com/docs/component-lifecycle"
+      >
+        <div className="text-black">Slide coming soon ... </div>
+      </TrygSlide>
+
+      {/* Slide -9 Life Cycle */}
+      <TrygSlide
+        title="Styling"
+        titlePadding="1rem"
+        readMoreLink="https://stenciljs.com/docs/component-lifecycle"
+      >
+        <div className="text-black">Styling slides coming soon ... </div>
+      </TrygSlide>
+
+      {/* Slide -10 Publishing */}
+      <TrygSlide title="Publishing Components" titlePadding="1rem">
+        <div className="text-black">Slide about how to publish package</div>
+      </TrygSlide>
+
+      {/* Slide -11 Publishing */}
+      <TrygSlide
+        title="Using stencils components -in React"
+        titlePadding="1rem"
+      >
+        <div className="text-black">How to use components in React</div>
+      </TrygSlide>
+
+      {/* Slide -12 Publishing */}
+      <TrygSlide title="Using stencils components -in Vue" titlePadding="1rem">
+        <div className="text-black">How to use components in React</div>
+      </TrygSlide>
+
+      {/* Slide -13 Roadmaps for trygno-ui */}
+      <TrygSlide title="Roadmaps for trygno-ui " titlePadding="1rem">
+        <div className="text-black">How to use components in React</div>
+      </TrygSlide>
+
+      {/* Slide -14 Challenges */}
+      <TrygSlide title="Challenges for trygno-ui " titlePadding="1rem">
+        <div className="text-black">How to use components in React</div>
+      </TrygSlide>
+
+      {/* Slide -15 Challenges */}
+      <TrygSlide title="Widgets " titlePadding="1rem">
+        <div className="text-black">Creating widgets with stencilsJS</div>
+      </TrygSlide>
     </Deck>
   );
 }
