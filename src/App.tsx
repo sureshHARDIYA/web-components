@@ -4,6 +4,7 @@ import Title from "./slides/Title";
 import { trygTheme } from "@/theme";
 import Agenda from "./slides/Agenda";
 import template from "./theme/template";
+import StateSlide from "./slides/7/States";
 import AddingProps from "./slides/AddingProps";
 import { TrygSlide } from "@/components/TrygSlide";
 import FreshComponent from "./slides/FeshComponent";
@@ -48,8 +49,13 @@ function App() {
       <FreshComponent />
 
       {/* Slide -6 Adding Props */}
-      <TrygSlide title="Adding Properties">
+      <TrygSlide title="Adding Properties" titlePadding="1rem">
         <AddingProps />
+      </TrygSlide>
+
+      {/* Slide -7 States */}
+      <TrygSlide title="The State Decorator (@State)" titlePadding="1rem">
+        <StateSlide />
       </TrygSlide>
     </Deck>
   );

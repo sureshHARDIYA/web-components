@@ -48,8 +48,8 @@ const AddingProps = () => {
   return (
     <div className="text-black">
       <ReactDiffViewer oldValue={oldCode} newValue={newCode} splitView={true} />
-      <Appear>
-        <CodePane language="html">{`<my-custom-input>This is my custom string.</my-custom-input> `}</CodePane>
+      <Appear className="mt-4">
+        <CodePane language="html">{`<my-custom-input name="name" type="text"></my-custom-input> `}</CodePane>
       </Appear>
     </div>
   );

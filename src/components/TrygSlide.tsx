@@ -8,6 +8,7 @@ export const TrygSlide = ({
   title,
   readMoreLink,
   hideBackground = false,
+  titlePadding = "3rem",
 }: any) => {
   return (
     <Slide
@@ -17,7 +18,7 @@ export const TrygSlide = ({
       })}
     >
       {title && (
-        <Heading margin="0px" padding="3rem" fontSize="42px">
+        <Heading margin="0px" padding={titlePadding} fontSize="42px">
           {title}
           {readMoreLink && (
             <StyledLink href={readMoreLink}>[Read More...]</StyledLink>
