@@ -11,6 +11,7 @@ import FreshComponent from "./slides/FeshComponent";
 import GettingStarted from "./slides/GettingStarted";
 import ProjectStructure from "./slides/ProjectStructure";
 import LifeCycle from "./slides/8/LifeCycle";
+import Styling from "./slides/9/Styling";
 
 const theme = {
   fonts: {
@@ -69,12 +70,8 @@ function App() {
       </TrygSlide>
 
       {/* Slide -9 Life Cycle */}
-      <TrygSlide
-        title="Styling"
-        titlePadding="1rem"
-        readMoreLink="https://stenciljs.com/docs/component-lifecycle"
-      >
-        <div className="text-black">Styling slides coming soon ... </div>
+      <TrygSlide title="Styling" titlePadding="1rem">
+        <Styling />
       </TrygSlide>
 
       {/* Slide -10 Publishing */}
