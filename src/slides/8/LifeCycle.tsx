@@ -65,8 +65,8 @@ const LifeCycle = () => {
         xmlns="http://www.w3.org/2000/svg"
         className="h-full w-full max-h-full"
       >
-        <g fill-rule="evenodd">
-          <g fill="none" stroke-linecap="square">
+        <g fillRule="evenodd">
+          <g fill="none" strokeLinecap="square">
             <path
               d="m552 743c49.706 0 90-40.294 90-90v-488c0-58.5-47.2-106-105.5-106-58.393 0.16547-105.61 47.607-105.5 106l0.4 68"
               stroke="#7b83a6"
@@ -85,7 +85,7 @@ const LifeCycle = () => {
             <path
               d="m431.4 282.5v24.337"
               stroke="#7b83a6"
-              stroke-dasharray="1, 6"
+              strokeDasharray="1, 6"
               className="pathUpdate_VwyZ"
             ></path>
             <path
@@ -119,8 +119,8 @@ const LifeCycle = () => {
               className="pathRemoved_epzo"
             ></path>
             <g
-              font-family="SFMono-Regular, 'SF Mono', 'Lucida Console', monospace"
-              font-size="15px"
+              fontFamily="SFMono-Regular, 'SF Mono', 'Lucida Console', monospace"
+              fontSize="15px"
             >
               <g>
                 <a
@@ -349,7 +349,7 @@ const LifeCycle = () => {
                 </a>
               </g>
             </g>
-            <g font-size="14px" letter-spacing="-.2" text-anchor="middle">
+            <g fontSize="14px" letterSpacing="-.2" textAnchor="middle">
               <g className="trigger path-init">
                 <rect
                   width="190"
