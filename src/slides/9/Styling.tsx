@@ -154,7 +154,12 @@ const Styling = () => {
         </div>
       </div>
       <div id="step-content-3" hidden className="mt-6">
-        <p-text>CSS ::part() pseudo-element.</p-text>
+        <p-text>
+          Only elements explicitly marked with the part attribute can be styled
+          from outside. If you don't use <kbd>part</kbd>, external styles would
+          not be able to affect the heading inside the Shadow DOM, because the
+          encapsulation would prevent them from reaching it.
+        </p-text>
         <div className="mt-6">
           <CodePane language="tsx">
             {`

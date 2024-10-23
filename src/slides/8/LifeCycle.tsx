@@ -209,6 +209,7 @@ const LifeCycle = () => {
                 <a
                   className="pathInit_un9K pathUpdate_VwyZ"
                   href="https://stenciljs.com/docs/templating-jsx"
+                  target="_blank"
                 >
                   <rect
                     y="451"
