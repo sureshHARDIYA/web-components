@@ -1,6 +1,6 @@
 import { Image } from "spectacle";
 
-import lifeCylce from "./LifeCycle.gif";
+import lifeCylce from "./lifecycle.gif";
 
 const ReactLifeCycle = () => {
   return (
