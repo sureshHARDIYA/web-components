@@ -12,6 +12,10 @@ import GettingStarted from "./slides/GettingStarted";
 import ProjectStructure from "./slides/ProjectStructure";
 import LifeCycle from "./slides/8/LifeCycle";
 import Styling from "./slides/9/Styling";
+import ShadowDOM from "./slides/5/ShadowDOM";
+import WhyShadowDOM from "./slides/5/WhyShadowDOM";
+import ReactLifeCycle from "./slides/8/ReactLifeCycle";
+import Publishing from "./slides/10/Publishing";
 
 const theme = {
   fonts: {
@@ -50,6 +54,20 @@ function App() {
       {/* Slide -5 */}
       <FreshComponent />
 
+      {/* Slide -5.1 */}
+      <TrygSlide title="Can you see the shadow?" titlePadding="1rem">
+        <ShadowDOM />
+      </TrygSlide>
+
+      {/* Slide -5.2 */}
+      <TrygSlide
+        title="Why shadow DOM?"
+        titlePadding="1rem"
+        readMoreLink="https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM#declaratively_with_html"
+      >
+        <WhyShadowDOM />
+      </TrygSlide>
+
       {/* Slide -6 Adding Props */}
       <TrygSlide title="Adding Properties" titlePadding="1rem">
         <AddingProps />
@@ -69,6 +87,15 @@ function App() {
         <LifeCycle />
       </TrygSlide>
 
+      {/* Slide -8 Life Cycle 2 */}
+      <TrygSlide
+        title="React lifecycle comparison"
+        titlePadding="1rem"
+        readMoreLink="https://stenciljs.com/docs/component-lifecycle"
+      >
+        <ReactLifeCycle />
+      </TrygSlide>
+
       {/* Slide -9 Life Cycle */}
       <TrygSlide title="Styling" titlePadding="1rem">
         <Styling />
@@ -76,7 +103,7 @@ function App() {
 
       {/* Slide -10 Publishing */}
       <TrygSlide title="Publishing Components" titlePadding="1rem">
-        <div className="text-black">Slide about how to publish package</div>
+        <Publishing />
       </TrygSlide>
 
       {/* Slide -11 Publishing */}

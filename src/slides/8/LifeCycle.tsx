@@ -52,7 +52,7 @@ const LifeCycle = () => {
   };
 
   return (
-    <div className="text-black max-h-screen">
+    <div className="text-black h-full w-full max-h-full">
       <p-modal open="false" aria="{ 'aria-label': 'Some Heading' }">
         <p-heading slot="header" size="large" tag="h2">
           {activeState?.title}

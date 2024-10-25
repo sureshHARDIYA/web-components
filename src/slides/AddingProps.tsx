@@ -46,12 +46,12 @@ export class MyCustomInput {
 
 const AddingProps = () => {
   return (
-    <div className="text-black">
+    <Appear className="text-black">
       <ReactDiffViewer oldValue={oldCode} newValue={newCode} splitView={true} />
       <Appear className="mt-4">
         <CodePane language="html">{`<my-custom-input name="name" type="text"></my-custom-input> `}</CodePane>
       </Appear>
-    </div>
+    </Appear>
   );
 };
 
