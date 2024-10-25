@@ -1,16 +1,5 @@
 import { Appear, CodePane } from "spectacle";
-import tomorrow from "react-syntax-highlighter/dist/cjs/styles/prism/tomorrow";
-
-// Clone and modify the tomorrow theme
-const customTheme = {
-  ...tomorrow,
-  'code[class*="language-"]': {
-    ...tomorrow['code[class*="language-"]'],
-    fontSize: "14px",
-    overflow: "auto",
-    lineHeight: "1.1",
-  },
-};
+import { customTheme } from "./customTheme";
 
 const StateSlide = () => {
   const handleClick = () => {

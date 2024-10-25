@@ -16,6 +16,9 @@ import ShadowDOM from "./slides/5/ShadowDOM";
 import WhyShadowDOM from "./slides/5/WhyShadowDOM";
 import ReactLifeCycle from "./slides/8/ReactLifeCycle";
 import Publishing from "./slides/10/Publishing";
+import UsingComponents from "./slides/11/Using";
+import UsingComponents2 from "./slides/11/UsingMethod2";
+import RoadMaps from "./slides/13/RoadMaps";
 
 const theme = {
   fonts: {
@@ -106,22 +109,27 @@ function App() {
         <Publishing />
       </TrygSlide>
 
-      {/* Slide -11 Publishing */}
+      {/* Slide -11 Using components -method 1 */}
       <TrygSlide
-        title="Using stencils components -in React"
+        title="Using trygno-ui components -in React/Vue"
         titlePadding="1rem"
       >
-        <div className="text-black">How to use components in React</div>
+        <UsingComponents />
       </TrygSlide>
 
-      {/* Slide -12 Publishing */}
-      <TrygSlide title="Using stencils components -in Vue" titlePadding="1rem">
-        <div className="text-black">How to use components in React</div>
+      {/* Slide -11 Using components -method 2 */}
+      <TrygSlide
+        title="Using stencils components -in React/Vue"
+        titlePadding="1rem"
+      >
+        <UsingComponents2 />
       </TrygSlide>
 
       {/* Slide -13 Roadmaps for trygno-ui */}
       <TrygSlide title="Roadmaps for trygno-ui " titlePadding="1rem">
-        <div className="text-black">How to use components in React</div>
+        <div className="text-black">
+          <RoadMaps />
+        </div>
       </TrygSlide>
 
       {/* Slide -14 Challenges */}

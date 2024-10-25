@@ -8,8 +8,7 @@ const Publishing = () => {
           - run <kbd>npm run build</kbd>
         </ListItem>
         <ListItem className="text-black text-sm">
-          - increase package version. We follow semantic versioning rules. For
-          bugfix/hotfix or minor change use patch version
+          - increase package version. We follow semantic versioning rules.
         </ListItem>
         <ListItem className="text-black text-sm">
           - Then push your changes into main.
