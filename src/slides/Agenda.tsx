@@ -9,7 +9,7 @@ const Agenda = () => {
         <tbody>
           <TTR>
             <TTD>
-              <kbd>Getting started</kbd>
+              Getting started with <kbd>@trygno-ui</kbd>
             </TTD>
             <TTD>
               Create your first web component using <kbd>StencilJS</kbd>
@@ -17,15 +17,15 @@ const Agenda = () => {
           </TTR>
           <TTR>
             <TTD>
-              <kbd>Providing Properties</kbd>
+              Providing Properties <kbd>(@Prop)</kbd>
             </TTD>
             <TTD>How to provide properties to your web components</TTD>
           </TTR>
           <TTR>
-            <TTD>Exposing methods</TTD>
             <TTD>
-              How to expose methods to your web components for external use
+              Internal State <kbd>(@State)</kbd>
             </TTD>
+            <TTD>Using internal state in your web components</TTD>
           </TTR>
           <TTR>
             <TTD>Lifecycle methods and events</TTD>
@@ -34,7 +34,11 @@ const Agenda = () => {
             </TTD>
           </TTR>
           <TTR>
-            <TTD>Publishing</TTD>
+            <TTD>Styling</TTD>
+            <TTD>Things to consider when styling your web components</TTD>
+          </TTR>
+          <TTR>
+            <TTD>Publishing & using the components</TTD>
             <TTD>
               How to publish your web components to <kbd>nexus</kbd> and use
               them in your projects
