@@ -20,6 +20,7 @@ import UsingComponents from "./slides/11/Using";
 import UsingComponents2 from "./slides/11/UsingMethod2";
 import RoadMaps from "./slides/13/RoadMaps";
 import Challenges from "./slides/14/Challenges";
+import WidgetsWithStencil from "./slides/15/Widets";
 
 const theme = {
   fonts: {
@@ -138,9 +139,14 @@ function App() {
         <Challenges />
       </TrygSlide>
 
-      {/* Slide -15 Challenges */}
+      {/* Slide -15 Widgets */}
       <TrygSlide title="Widgets " titlePadding="1rem">
-        <div className="text-black">Creating widgets with stencilsJS</div>
+        <WidgetsWithStencil />
+      </TrygSlide>
+
+      {/* Slide -16 Widgets */}
+      <TrygSlide title="Demo" titlePadding="1rem">
+        <div className="text-black">- May be a demo of storybook</div>
       </TrygSlide>
     </Deck>
   );
