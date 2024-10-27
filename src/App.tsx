@@ -83,6 +83,17 @@ function App() {
         <StateSlide />
       </TrygSlide>
 
+      {/* Slide -7.1 Exposing Methods */}
+      <TrygSlide title="Exposing Methods (@State)" titlePadding="10px">
+        <iframe
+          src="https://codesandbox.io/p/devbox/clever-hertz-nv3q6p?workspaceId=166d4d40-e502-4113-9b65-96b3133ca210&embed=1"
+          className="w-full min-h-full border-0 border-radius-[4px] overflow-hidden"
+          title="clever-hertz-nv3q6p"
+          allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+          sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+        ></iframe>
+      </TrygSlide>
+
       {/* Slide -8 Life Cycle */}
       <TrygSlide
         title="Component Lifecycle Methods"
