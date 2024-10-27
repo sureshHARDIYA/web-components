@@ -13,7 +13,7 @@ const WhyShadowDOM = () => {
       </Appear>
       <Appear className="mt-4 w-full">
         <p-inline-notification
-          heading="Declaratively with HTML"
+          heading="Encapsulation from CSS"
           heading-tag="h3"
           state="success"
           style={{ width: "100%" }}

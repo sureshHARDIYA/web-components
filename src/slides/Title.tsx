@@ -20,7 +20,8 @@ const Title = () => {
           <s>Overrated</s> web components with <kbd>StencilJS</kbd>
         </Heading>
         <Heading margin="50px 0 0 0" color={trygTheme.grey40} fontSize="35px">
-          Widgets, Components - best practices and lesson learned
+          Getting started with web components using StencilJS and{" "}
+          <kbd>@trygno-ui</kbd>
         </Heading>
         <Heading margin="0px" color={trygTheme.grey40} fontSize="25px">
           <kbd>

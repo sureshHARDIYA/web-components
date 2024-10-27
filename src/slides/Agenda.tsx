@@ -46,14 +46,14 @@ const Agenda = () => {
           </TTR>
           <TTR>
             <TTD>Challenges</TTD>
-            <TTD>Lessons learned, challenges and best practices</TTD>
+            <TTD>Lessons learned, challenges</TTD>
           </TTR>
           <TTR>
             <TTD>
               <kbd>Widgets</kbd>
             </TTD>
             <TTD>
-              Lessons learned from creating widgets using <kbd>StencilJS</kbd>
+              Can we create widgets entirely in <kbd>StencilJS?</kbd>
             </TTD>
           </TTR>
         </tbody>
