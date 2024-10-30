@@ -8,8 +8,7 @@ const WhatWhyWidget = () => {
       <div>
         <p>
           A <kbd>web application</kbd> is a self-contained, interactive
-          component or interface element that performs a specific function or
-          displays specific information.
+          component or interface element that performs a specific function.
         </p>{" "}
         <Appear priority={0} className="mt-6">
           <Image
