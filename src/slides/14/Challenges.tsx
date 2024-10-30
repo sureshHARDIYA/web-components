@@ -17,10 +17,10 @@ const Challenges = () => {
         <Appear className="mt-8 ml-16">
           Convincing people to adopt them is the real challenge.
         </Appear>
-        <Appear className="mt-8 ml-32 leading-16">
+        {/* <Appear className="mt-8 ml-32 leading-16">
           Technology evolves quickly, but mindsets stay rooted in comfort zones,
           making adaptation difficult.
-        </Appear>
+        </Appear> */}
       </blockquote>
     </div>
   );

@@ -28,9 +28,5 @@ const WidgetsWithStencil = () => {
 export default WidgetsWithStencil;
 
 const PSlide = ({ children }: any) => {
-  return (
-    <div className="bg-red-200 p-4 min-h-20 flex justify-center items-center">
-      {children}
-    </div>
-  );
+  return <div className="bg-red-200 p-4 min-h-20 ">{children}</div>;
 };

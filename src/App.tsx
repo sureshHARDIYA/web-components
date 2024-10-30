@@ -4,23 +4,23 @@ import Title from "./slides/Title";
 import { trygTheme } from "@/theme";
 import Agenda from "./slides/Agenda";
 import template from "./theme/template";
-import StateSlide from "./slides/7/States";
-import AddingProps from "./slides/AddingProps";
-import { TrygSlide } from "@/components/TrygSlide";
-import FreshComponent from "./slides/FeshComponent";
-import GettingStarted from "./slides/GettingStarted";
-import ProjectStructure from "./slides/ProjectStructure";
-import LifeCycle from "./slides/8/LifeCycle";
 import Styling from "./slides/9/Styling";
+import StateSlide from "./slides/7/States";
 import ShadowDOM from "./slides/5/ShadowDOM";
-import WhyShadowDOM from "./slides/5/WhyShadowDOM";
-import ReactLifeCycle from "./slides/8/ReactLifeCycle";
+import RoadMaps from "./slides/13/RoadMaps";
+import LifeCycle from "./slides/8/LifeCycle";
+import AddingProps from "./slides/AddingProps";
 import Publishing from "./slides/10/Publishing";
 import UsingComponents from "./slides/11/Using";
-import UsingComponents2 from "./slides/11/UsingMethod2";
-import RoadMaps from "./slides/13/RoadMaps";
 import Challenges from "./slides/14/Challenges";
+import { TrygSlide } from "@/components/TrygSlide";
+import WhyShadowDOM from "./slides/5/WhyShadowDOM";
+import FreshComponent from "./slides/FeshComponent";
 import WidgetsWithStencil from "./slides/15/Widets";
+import GettingStarted from "./slides/GettingStarted";
+import ReactLifeCycle from "./slides/8/ReactLifeCycle";
+import UsingComponents2 from "./slides/11/UsingMethod2";
+import ProjectStructure from "./slides/ProjectStructure";
 
 const theme = {
   fonts: {
@@ -84,7 +84,7 @@ function App() {
       </TrygSlide>
 
       {/* Slide -7.1 Exposing Methods */}
-      <TrygSlide title="Exposing Methods (@State)" titlePadding="10px">
+      <TrygSlide title="Exposing Methods (@Method)" titlePadding="10px">
         <iframe
           src="https://codesandbox.io/p/devbox/clever-hertz-nv3q6p?workspaceId=166d4d40-e502-4113-9b65-96b3133ca210&embed=1"
           className="w-full min-h-full border-0 border-radius-[4px] overflow-hidden"
@@ -157,7 +157,11 @@ function App() {
 
       {/* Slide -16 Widgets */}
       <TrygSlide title="Demo" titlePadding="1rem">
-        <div className="text-black">- May be a demo of storybook</div>
+        <div className="text-black">
+          <p-link-pure href="https://trygno-ui.dev.jee.prd1.prdroot.net/">
+            https://trygno-ui.dev.jee.prd1.prdroot.net/
+          </p-link-pure>
+        </div>
       </TrygSlide>
     </Deck>
   );
