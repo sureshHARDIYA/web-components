@@ -19,6 +19,7 @@ import FreshComponent from "./slides/FeshComponent";
 import WidgetsWithStencil from "./slides/15/Widets";
 import GettingStarted from "./slides/GettingStarted";
 import ReactLifeCycle from "./slides/8/ReactLifeCycle";
+import WhatWhyWidget from "./slides/15/WhatWhyWidget";
 import UsingComponents2 from "./slides/11/UsingMethod2";
 import ProjectStructure from "./slides/ProjectStructure";
 
@@ -145,16 +146,6 @@ function App() {
         </div>
       </TrygSlide>
 
-      {/* Slide -14 Challenges */}
-      <TrygSlide title="Challenges for trygno-ui " titlePadding="1rem">
-        <Challenges />
-      </TrygSlide>
-
-      {/* Slide -15 Widgets */}
-      <TrygSlide title="Widgets " titlePadding="1rem">
-        <WidgetsWithStencil />
-      </TrygSlide>
-
       {/* Slide -16 Widgets */}
       <TrygSlide title="Demo" titlePadding="1rem">
         <div className="text-black">
@@ -162,6 +153,21 @@ function App() {
             https://trygno-ui.dev.jee.prd1.prdroot.net/
           </p-link-pure>
         </div>
+      </TrygSlide>
+
+      {/* Slide -14 Challenges */}
+      <TrygSlide title="Challenges for trygno-ui " titlePadding="1rem">
+        <Challenges />
+      </TrygSlide>
+
+      {/* Slide -15 Widgets & Why */}
+      <TrygSlide title="Widgets - what/why?" titlePadding="1rem">
+        <WhatWhyWidget />
+      </TrygSlide>
+
+      {/* Slide -15 Widgets */}
+      <TrygSlide title="Widgets" titlePadding="1rem">
+        <WidgetsWithStencil />
       </TrygSlide>
     </Deck>
   );

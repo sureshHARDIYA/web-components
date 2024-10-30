@@ -5,28 +5,28 @@ const RoadMaps = () => {
         label="Initial Implementation of core components"
         hide-label="false"
       >
-        <input type="checkbox" name="some-name" checked />
+        <input type="checkbox" name="some-name" checked onChange={() => {}} />
       </p-checkbox-wrapper>
       <p-checkbox-wrapper
         label="Start using built components - in Vue (Endre, PIA)"
         hide-label="false"
       >
-        <input type="checkbox" name="some-name" checked />
+        <input type="checkbox" name="some-name" checked onChange={() => {}} />
       </p-checkbox-wrapper>
       <p-checkbox-wrapper label="Host storybook -https://trygno-ui.dev.jee.prd1.prdroot.net/">
-        <input type="checkbox" name="some-name" checked />
+        <input type="checkbox" name="some-name" checked onChange={() => {}} />
       </p-checkbox-wrapper>
       <p-checkbox-wrapper
         label="Add more web-components / shared components"
         loading="true"
       >
-        <input type="checkbox" name="some-name" checked />
+        <input type="checkbox" name="some-name" checked onChange={() => {}} />
       </p-checkbox-wrapper>
       <p-checkbox-wrapper
         label="Fix UD issues in components / based on INCLUD report"
         loading="true"
       >
-        <input type="checkbox" name="some-name" checked />
+        <input type="checkbox" name="some-name" checked onChange={() => {}} />
       </p-checkbox-wrapper>
       <p-checkbox-wrapper label="Externalize CSS variables/Style tokens">
         <input type="checkbox" name="some-name" />
