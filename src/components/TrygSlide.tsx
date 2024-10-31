@@ -25,6 +25,7 @@ export const TrygSlide = ({
                 marginLeft: "1rem",
                 color: "#dc0000",
               }}
+              target="_blank"
             >
               [Read More...]
             </Link>
