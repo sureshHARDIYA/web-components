@@ -1,10 +1,12 @@
 import { Deck } from "spectacle";
 
 import theme from "@/utils/theme";
+import Microfrontend from "./slides/4";
 import template from "@/theme/template";
-import { TrygSlide } from "@/components/TrygSlide";
 import DESTitle from "./slides/1/Title";
 import WhatIsDesignSystem from "./slides/2";
+import { TrygSlide } from "@/components/TrygSlide";
+import ProblemStatements from "./slides/3/Problems";
 
 const DesignEchoSystem = () => {
   return (
@@ -14,9 +16,19 @@ const DesignEchoSystem = () => {
         <DESTitle />
       </TrygSlide>
 
-      {/* Agenda Slide 2 */}
+      {/* 2: What is DS? */}
       <TrygSlide>
         <WhatIsDesignSystem />
+      </TrygSlide>
+
+      {/* 3: Problem Statement */}
+      <TrygSlide title="Challenges">
+        <ProblemStatements />
+      </TrygSlide>
+
+      {/* 4: Tryg vision */}
+      <TrygSlide>
+        <Microfrontend />
       </TrygSlide>
     </Deck>
   );
