@@ -81,6 +81,13 @@ const ProblemStatements = () => {
             <SMARTCheckbox label="Knowledge sharing / Pair programming" />
           </Box>
         </Appear>
+        <Appear>
+          <p-inline-notification
+            heading="Some heading"
+            heading-tag="h3"
+            description="Some description."
+          ></p-inline-notification>
+        </Appear>
       </Grid>
     </div>
   );
