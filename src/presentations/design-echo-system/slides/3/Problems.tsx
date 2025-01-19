@@ -83,9 +83,9 @@ const ProblemStatements = () => {
         </Appear>
         <Appear>
           <p-inline-notification
-            heading="Some heading"
+            heading="Frontend Enginner in Platform Team"
             heading-tag="h3"
-            description="Some description."
+            description="Design System Ecosystem / Widgets / FE community / FE security"
           ></p-inline-notification>
         </Appear>
       </Grid>

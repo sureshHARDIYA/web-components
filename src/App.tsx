@@ -8,7 +8,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<WebComponents />} />
-        <Route path="/design-echo-system" element={<DesignEchoSystem />} />
+        <Route
+          path="/design-system-echosystem"
+          element={<DesignEchoSystem />}
+        />
       </Routes>
     </BrowserRouter>
   );

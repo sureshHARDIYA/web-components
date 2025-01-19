@@ -7,6 +7,7 @@ import template from "@/theme/template";
 import WhatIsDesignSystem from "./slides/2";
 import { TrygSlide } from "@/components/TrygSlide";
 import ProblemStatements from "./slides/3/Problems";
+import DesignSystemEchoSystem from "./slides/5";
 
 const DesignEchoSystem = () => {
   return (
@@ -32,6 +33,14 @@ const DesignEchoSystem = () => {
         titlePadding="0rem"
       >
         <Microfrontend />
+      </TrygSlide>
+
+      {/* 5: Design System Echosystem */}
+      <TrygSlide
+        title="Microfrontend Architecture / Widgets"
+        titlePadding="0rem"
+      >
+        <DesignSystemEchoSystem />
       </TrygSlide>
     </Deck>
   );
