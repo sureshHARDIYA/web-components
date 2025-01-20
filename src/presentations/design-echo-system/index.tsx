@@ -1,7 +1,7 @@
 import { Deck } from "spectacle";
 
 import theme from "@/utils/theme";
-import Microfrontend from "./slides/4";
+// import Microfrontend from "./slides/4";
 import DESTitle from "./slides/1/Title";
 import template from "@/theme/template";
 import WhatIsDesignSystem from "./slides/2";

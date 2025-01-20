@@ -1,12 +1,4 @@
-import {
-  Appear,
-  Box,
-  Grid,
-  Image,
-  ListItem,
-  OrderedList,
-  Text,
-} from "spectacle";
+import { Box, Grid, Image } from "spectacle";
 
 import DSEC from "./design_system_echosystem.png";
 import COMPONENTS from "./design system components.png";
