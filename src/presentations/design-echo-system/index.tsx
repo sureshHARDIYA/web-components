@@ -1,4 +1,4 @@
-import { Deck } from "spectacle";
+import { Appear, Deck, Text } from "spectacle";
 
 import theme from "@/utils/theme";
 // import Microfrontend from "./slides/4";
@@ -38,6 +38,19 @@ const DesignEchoSystem = () => {
       {/* 5: Design System Echosystem */}
       <TrygSlide title="Design System Echosystem" titlePadding="0rem">
         <DesignSystemEchoSystem />
+      </TrygSlide>
+
+      <TrygSlide title="OS, AI and further research" titlePadding="0rem">
+        <Appear>
+          <Text color="black">
+            Usage of AI in generation of components/tests/UD testings
+          </Text>
+        </Appear>
+        <Appear>
+          <Text color="black">
+            Open-source the design system to the community (May be)
+          </Text>
+        </Appear>
       </TrygSlide>
     </Deck>
   );
