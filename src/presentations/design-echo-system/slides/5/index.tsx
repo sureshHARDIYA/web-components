@@ -164,12 +164,6 @@ const DesignSystemEchoSystem = () => {
                 heading-tag="h3"
                 state="success"
               ></p-inline-notification>
-              <br />
-              <p-inline-notification
-                heading="@tryg/assets"
-                heading-tag="h3"
-                state="success"
-              ></p-inline-notification>
             </Appear>
           </Box>
         </Grid>
