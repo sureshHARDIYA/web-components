@@ -1,4 +1,4 @@
-import { Box, Grid, Image } from "spectacle";
+import { Appear, Box, Grid, Image } from "spectacle";
 
 import DSEC from "./design_system_echosystem.png";
 import COMPONENTS from "./design system components.png";
@@ -134,9 +134,43 @@ const DesignSystemEchoSystem = () => {
             <p-tag color="notification-success-soft">Dialog</p-tag> &nbsp;
             <br />
             <br />
-            <p-tag color="notification-info-soft">design tokens</p-tag> &nbsp;
-            <p-tag color="notification-info-soft">fonts</p-tag> &nbsp;
-            <p-tag color="notification-info-soft">icons</p-tag> &nbsp;
+            <Appear>
+              <p-inline-notification
+                heading="@tryg/core"
+                heading-tag="h3"
+                state="success"
+              ></p-inline-notification>
+              <br />
+              <p-inline-notification
+                heading="@tryg/design-tokens"
+                heading-tag="h3"
+                state="success"
+              ></p-inline-notification>
+              <br />
+              <p-inline-notification
+                heading="@tryg/fonts"
+                heading-tag="h3"
+                state="success"
+              ></p-inline-notification>
+              <br />
+              <p-inline-notification
+                heading="@tryg/icons"
+                heading-tag="h3"
+                state="success"
+              ></p-inline-notification>
+              <br />
+              <p-inline-notification
+                heading="@tryg/utils"
+                heading-tag="h3"
+                state="success"
+              ></p-inline-notification>
+              <br />
+              <p-inline-notification
+                heading="@tryg/assets"
+                heading-tag="h3"
+                state="success"
+              ></p-inline-notification>
+            </Appear>
           </Box>
         </Grid>
       </div>
