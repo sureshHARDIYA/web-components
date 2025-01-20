@@ -36,10 +36,7 @@ const DesignEchoSystem = () => {
       </TrygSlide>
 
       {/* 5: Design System Echosystem */}
-      <TrygSlide
-        title="Microfrontend Architecture / Widgets"
-        titlePadding="0rem"
-      >
+      <TrygSlide title="Design System Echosystem" titlePadding="0rem">
         <DesignSystemEchoSystem />
       </TrygSlide>
     </Deck>
