@@ -112,10 +112,17 @@ const DesignSystemEchoSystem = () => {
           <Box backgroundColor="primary">
             <Image src={DSEC} />
           </Box>
-          <Box backgroundColor="primary" p={10}>
-            <Text color="black">
-              Anchor components : <kbd>PIA, ENDRE</kbd>
-            </Text>
+          <Box p={10}>
+            <p-tag color="notification-success-soft">
+              Design System: <kbd>anchor</kbd>
+            </p-tag>
+            &nbsp;
+            <br />
+            <br />
+            <p-tag color="notification-info-soft">
+              Products : <kbd>Endre, Min Side</kbd>
+            </p-tag>
+            &nbsp;
           </Box>
         </Grid>
       </div>
@@ -159,11 +166,55 @@ const DesignSystemEchoSystem = () => {
       </div>
 
       <div id="step-content-4" hidden className="mt-6">
-        <Image src={RECIPIE} width="70%" />
+        <Grid gridTemplateColumns="2fr 1fr" gridColumnGap={15}>
+          <Box backgroundColor="primary">
+            <Image src={RECIPIE} />
+          </Box>
+          <Box p={10}>
+            <p-tag color="notification-success-soft">Price Components</p-tag>
+            &nbsp;
+            <br />
+            <br />
+            <p-tag color="notification-info-soft">Coverage comparison</p-tag>
+            &nbsp;
+            <br />
+            <br />
+            <p-tag color="notification-info-soft">Tryg Legehelp</p-tag>
+            &nbsp;
+            <br />
+            <br />
+            <p-link-pure
+              underline="true"
+              href="https://trygno-ui.dev.jee.prd1.prdroot.net/?path=/docs/components-shared-coverage-trygno-coverage-comparison--docs"
+            >
+              Trygno Recipe components
+            </p-link-pure>
+          </Box>
+        </Grid>
       </div>
 
       <div id="step-content-4" hidden className="mt-6">
-        <Image src={SMART} width="70%" />
+        <Grid gridTemplateColumns="2fr 1fr" gridColumnGap={15}>
+          <Box backgroundColor="primary">
+            <Image src={SMART} />
+          </Box>
+          <Box p={10}>
+            <p-tag color="notification-success-soft">
+              Widgets and Microfronted World
+            </p-tag>
+            &nbsp;
+            <br /> <br />
+            <p-tag color="notification-success-soft">
+              Components with API integration
+            </p-tag>
+            &nbsp;
+            <br /> <br />
+            <p-tag color="notification-info-soft">Vehicle lookup</p-tag>
+            &nbsp; <p-tag color="notification-info-soft">Address lookup</p-tag>
+            &nbsp; <p-tag color="notification-info-soft">Customer lookup</p-tag>
+            &nbsp;
+          </Box>
+        </Grid>
       </div>
 
       <div id="step-content-4" hidden className="mt-6">
