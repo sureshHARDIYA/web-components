@@ -1,6 +1,6 @@
 import { Appear, Box, Grid } from "spectacle";
 
-const SMARTCheckbox = ({
+export const SMARTCheckbox = ({
   label = "Default Label",
   isChecked = false,
   isLoading = false,
