@@ -1005,13 +1005,6 @@
   dependencies:
     "@types/unist" "^2"
 
-"@types/node@^22.13.14":
-  version "22.13.14"
-  resolved "https://dkdc2supdevw002.prd1.prdroot.net:9443/nexus/content/groups/npm-all/@types/node/-/node-22.13.14.tgz#70d84ec91013dcd2ba2de35532a5a14c2b4cc912"
-  integrity sha512-Zs/Ollc1SJ8nKUAgc7ivOEdIBM8JAKgrqqUYi2J997JuKO7/tpQC+WCetQ1sypiKCQWHdvdg9wBNpUPEWZae7w==
-  dependencies:
-    undici-types "~6.20.0"
-
 "@types/parse-json@^4.0.0":
   version "4.0.2"
   resolved "https://dkdc2supdevw002.prd1.prdroot.net:9443/nexus/content/groups/npm-all/@types/parse-json/-/parse-json-4.0.2.tgz#5950e50960793055845e956c427fc2b0d70c5239"
@@ -2700,9 +2693,9 @@ pify@^2.3.0:
   integrity sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==
 
 pirates@^4.0.1:
-  version "4.0.6"
-  resolved "https://dkdc2supdevw002.prd1.prdroot.net:9443/nexus/content/groups/npm-all/pirates/-/pirates-4.0.6.tgz#3018ae32ecfcff6c29ba2267cbf21166ac1f36b9"
-  integrity sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==
+  version "4.0.7"
+  resolved "https://dkdc2supdevw002.prd1.prdroot.net:9443/nexus/content/groups/npm-all/pirates/-/pirates-4.0.7.tgz#643b4a18c4257c8a65104b73f3049ce9a0a15e22"
+  integrity sha512-TfySrs/5nm8fQJDcBDuUng3VOUKsd7S+zqvbOTiGXHfxX4wK31ard+hoNuvkicM/2YFzlpDgABOevKSsB4G/FA==
 
 postcss-import@^15.1.0:
   version "15.1.0"
@@ -3511,11 +3504,6 @@ typescript@^5.5.3:
   version "5.8.2"
   resolved "https://dkdc2supdevw002.prd1.prdroot.net:9443/nexus/content/groups/npm-all/typescript/-/typescript-5.8.2.tgz#8170b3702f74b79db2e5a96207c15e65807999e4"
   integrity sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==
-
-undici-types@~6.20.0:
-  version "6.20.0"
-  resolved "https://dkdc2supdevw002.prd1.prdroot.net:9443/nexus/content/groups/npm-all/undici-types/-/undici-types-6.20.0.tgz#8171bf22c1f588d1554d55bf204bc624af388433"
-  integrity sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==
 
 unherit@^1.0.4:
   version "1.1.3"
