@@ -1,5 +1,6 @@
 import { SMARTCheckbox } from "@/presentations/design-echo-system/slides/3/Problems";
-import { Appear, Box } from "spectacle";
+import { customTheme } from "@/slides/7/customTheme";
+import { Appear, Box, CodePane } from "spectacle";
 
 const NordicDesignSystem = () => {
   return (
@@ -54,10 +55,20 @@ const NordicDesignSystem = () => {
           <br />
           <Appear>
             <p-inline-notification
-              heading="Support/Bugs/Further development?"
+              heading="Disucss/Support/Bugs/Further development/who?"
               heading-tag="h3"
-              description="model = `Busy` ? `report to platform Team` : `contribute`"
             ></p-inline-notification>
+            <br />
+            <Appear>
+              <CodePane language="tsx" theme={customTheme}>
+                {` 
+                // Contributions are ALWAYS encouraged 
+                // ELSE  
+
+                 return useYourBestEstimate(TASK) <= 1 HOUR ? ContactDirectly(Teams| Email) : CreateJIRATicket(PST)
+                `}
+              </CodePane>
+            </Appear>
           </Appear>
         </Box>
       </Appear>

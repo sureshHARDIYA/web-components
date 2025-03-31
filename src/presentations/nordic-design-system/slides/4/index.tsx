@@ -130,9 +130,7 @@ const DesignSystemEchoSystem = () => {
             <Image src={CORE} />
           </Box>
           <Box p={10}>
-            <p-tag color="notification-success-soft">Buttons</p-tag> &nbsp;
-            <p-tag color="notification-success-soft">Alerts</p-tag> &nbsp;
-            <p-tag color="notification-success-soft">Dialog</p-tag> &nbsp;
+            <p-tag color="notification-warning-soft">Nordic</p-tag> &nbsp;
             <br />
             <br />
             <Appear>
@@ -143,7 +141,7 @@ const DesignSystemEchoSystem = () => {
               ></p-inline-notification>
               <br />
               <p-inline-notification
-                heading="@tryg/design-tokens"
+                heading="@tryg/style-tokens"
                 heading-tag="h3"
                 state="success"
               ></p-inline-notification>
@@ -176,6 +174,8 @@ const DesignSystemEchoSystem = () => {
             <Image src={TECHNOLOGY} />
           </Box>
           <Box p={10}>
+            <p-tag color="notification-warning-soft">Nordic</p-tag> <br />{" "}
+            <br />
             <p-tag color="notification-success-soft">Vue Wrappers</p-tag>
             &nbsp;
             <br />

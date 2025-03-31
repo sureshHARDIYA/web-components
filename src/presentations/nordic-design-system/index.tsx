@@ -9,6 +9,7 @@ import { TrygSlide } from "@/components/TrygSlide";
 import DesignSystemEchoSystemGeneral from "./slides/3/DSES";
 import DesignSystemEchoSystem from "./slides/4";
 import NordicDesignSystem from "./slides/5";
+import RoadMaps from "./slides/6/Roadmaps";
 
 const DesignEchoSystem = () => {
   return (
@@ -33,7 +34,12 @@ const DesignEchoSystem = () => {
         <DesignSystemEchoSystem />
       </TrygSlide>
 
-      {/* 5: Design System Echosystem */}
+      {/* 5-: Design System Echosystem */}
+      <TrygSlide title="Roadmaps" titlePadding="0rem">
+        <RoadMaps />
+      </TrygSlide>
+
+      {/* 6: Design System Echosystem */}
       <TrygSlide
         title="Nordic Design System/Norwegian Design System"
         titlePadding="0rem"
