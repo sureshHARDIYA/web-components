@@ -10,6 +10,7 @@ import DesignSystemEchoSystemGeneral from "./slides/3/DSES";
 import DesignSystemEchoSystem from "./slides/4";
 import NordicDesignSystem from "./slides/5";
 import RoadMaps from "./slides/6/Roadmaps";
+import Summary from "./slides/7";
 
 const DesignEchoSystem = () => {
   return (
@@ -45,6 +46,11 @@ const DesignEchoSystem = () => {
         titlePadding="0rem"
       >
         <NordicDesignSystem />
+      </TrygSlide>
+
+      {/* 7: Summary */}
+      <TrygSlide title="Take away" titlePadding="0rem">
+        <Summary />
       </TrygSlide>
     </Deck>
   );
