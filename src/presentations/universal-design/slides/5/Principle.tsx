@@ -1,15 +1,12 @@
-import { Appear, Heading, Image } from "spectacle";
+import { Image } from "spectacle";
 
-import IMG from "./uu.gif";
+import IMG from "./uud.png";
 
 const Principles = () => {
   return (
-    <Appear priority={0}>
-      <div className="flex justify-center w-full">
-        <Heading fontSize="h3">Principles of Universal Design</Heading>
-        <Image src={IMG} alt="Principles" className="flex" />
-      </div>
-    </Appear>
+    <div className="flex justify-center w-full">
+      <Image src={IMG} alt="Principles" />
+    </div>
   );
 };
 

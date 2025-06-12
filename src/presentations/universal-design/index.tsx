@@ -9,6 +9,9 @@ import Agenda from "./slides/2/Agenda";
 import Agenda2 from "./slides/3/Agenda";
 import UniversalDesign from "./slides/4/UniversalDesign";
 import Principles from "./slides/5/Principle";
+import Compliance from "./slides/6/Compliance";
+import Consquences from "./slides/6/Second";
+import ConformanceLevel from "./slides/7/Specifications";
 
 const DesignEchoSystem = () => {
   return (
@@ -36,6 +39,21 @@ const DesignEchoSystem = () => {
       {/* 5: Principles of Universal Design */}
       <TrygSlide>
         <Principles />
+      </TrygSlide>
+
+      {/* 6: Principles of Universal Design */}
+      <TrygSlide title="Legal Landscape and Compliance">
+        <Compliance />
+      </TrygSlide>
+
+      {/* 7: Principles of Universal Design */}
+      <TrygSlide title="Consequences of Non-Compliance">
+        <Consquences />
+      </TrygSlide>
+
+      {/* 8: Principles of Universal Design */}
+      <TrygSlide title="Standards & Specifications">
+        <ConformanceLevel />
       </TrygSlide>
     </Deck>
   );
