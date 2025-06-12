@@ -8,6 +8,7 @@ import DESTitle from "./slides/1/Title";
 import Agenda from "./slides/2/Agenda";
 import Agenda2 from "./slides/3/Agenda";
 import UniversalDesign from "./slides/4/UniversalDesign";
+import Principles from "./slides/5/Principle";
 
 const DesignEchoSystem = () => {
   return (
@@ -30,6 +31,11 @@ const DesignEchoSystem = () => {
       {/* 4: Agenda 2/2 */}
       <TrygSlide title="Universal Design">
         <UniversalDesign />
+      </TrygSlide>
+
+      {/* 5: Principles of Universal Design */}
+      <TrygSlide>
+        <Principles />
       </TrygSlide>
     </Deck>
   );
