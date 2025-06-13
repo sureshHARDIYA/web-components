@@ -12,6 +12,9 @@ import Principles from "./slides/5/Principle";
 import Compliance from "./slides/6/Compliance";
 import Consquences from "./slides/6/Second";
 import ConformanceLevel from "./slides/7/Specifications";
+import ScreenReader, { ScreenReader2 } from "./slides/8/ScreenReader";
+import CurbCutEffect from "./slides/9/CurbCutEffect";
+import ScreenReaders from "./slides/10/ScreenReader";
 
 const DesignEchoSystem = () => {
   return (
@@ -31,7 +34,7 @@ const DesignEchoSystem = () => {
         <Agenda2 />
       </TrygSlide>
 
-      {/* 4: Agenda 2/2 */}
+      {/* 4 */}
       <TrygSlide title="Universal Design">
         <UniversalDesign />
       </TrygSlide>
@@ -41,19 +44,39 @@ const DesignEchoSystem = () => {
         <Principles />
       </TrygSlide>
 
-      {/* 6: Principles of Universal Design */}
+      {/* 6 */}
       <TrygSlide title="Legal Landscape and Compliance">
         <Compliance />
       </TrygSlide>
 
-      {/* 7: Principles of Universal Design */}
+      {/* 7 */}
       <TrygSlide title="Consequences of Non-Compliance">
         <Consquences />
       </TrygSlide>
 
-      {/* 8: Principles of Universal Design */}
+      {/* 8 */}
       <TrygSlide title="Standards & Specifications">
         <ConformanceLevel />
+      </TrygSlide>
+
+      {/* 9 */}
+      <TrygSlide title="Assistive Technologies (Web) - (1/2)">
+        <ScreenReader />
+      </TrygSlide>
+
+      {/* 10 */}
+      <TrygSlide title="Assistive Technologies (Web) - (2/2)">
+        <ScreenReader2 />
+      </TrygSlide>
+
+      {/* 11 */}
+      <TrygSlide title="The curb cut effect">
+        <CurbCutEffect />
+      </TrygSlide>
+
+      {/* 12: Screen readers */}
+      <TrygSlide>
+        <ScreenReaders />
       </TrygSlide>
     </Deck>
   );

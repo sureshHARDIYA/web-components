@@ -38,8 +38,29 @@ const Compliance = () => {
           heading-tag="h3"
           state="info"
           className="w-full"
-          description="Norway: Likestillings- og diskrimineringsloven (Equality and Anti-Discrimination Act)"
-        ></p-inline-notification>
+          // description="Norway: Likestillings- og diskrimineringsloven (Equality and Anti-Discrimination Act)"
+        >
+          <span>
+            <p-icon></p-icon> Norway: Likestillings- og diskrimineringsloven
+            (Equality and Anti-Discrimination Act)
+          </span>
+
+          <br />
+          <span className="mt-2 text-gold-900">
+            <p-icon></p-icon>{" "}
+            <span className="underline font-bold">Before 2022: </span>Norway
+            followed WCAG 2.0 Level AA under the old regulations.
+          </span>
+          <br />
+          <span className="mt-2 text-gold-900 w-full">
+            <p-icon></p-icon>{" "}
+            <span className="underline font-bold w-full">
+              From February 1, 2022:
+            </span>{" "}
+            Norway adopted WCAG 2.1 Level AA as part of aligning with the EU Web
+            Accessibility Directive.
+          </span>
+        </p-inline-notification>
       </Appear>
     </div>
   );

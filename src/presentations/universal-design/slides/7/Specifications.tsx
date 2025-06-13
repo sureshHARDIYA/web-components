@@ -35,9 +35,10 @@ const ConformanceLevel = () => {
             ></p-inline-notification>
             <br />
             <p-inline-notification
-              heading="AA (mid range)"
+              heading="AA (mid range) *"
               heading-tag="h2"
               className="mt-4"
+              color="success"
             ></p-inline-notification>
             <br />
             <p-inline-notification

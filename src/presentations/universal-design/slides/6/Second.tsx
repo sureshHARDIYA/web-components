@@ -39,7 +39,10 @@ const Consquences = () => {
             <TTD>
               In the U.S., SAS paid $200,000 and were legally compelled to fix
               accessibility flaws.{" "}
-              <a href="https://www.levelaccess.com/blog/title-iii-lawsuits-10-big-companies-sued-over-website-accessibility/">
+              <a
+                href="https://www.levelaccess.com/blog/title-iii-lawsuits-10-big-companies-sued-over-website-accessibility/"
+                className="text-blue-500"
+              >
                 Read more
               </a>
             </TTD>
