@@ -16,6 +16,7 @@ import ScreenReader, { ScreenReader2 } from "./slides/8/ScreenReader";
 import CurbCutEffect from "./slides/9/CurbCutEffect";
 import ScreenReaders from "./slides/10/ScreenReader";
 import SemanticWeb from "./slides/11/SemanticWeb";
+import SemanticHTML from "./slides/12/SemanticHTML";
 
 const DesignEchoSystem = () => {
   return (
@@ -83,6 +84,11 @@ const DesignEchoSystem = () => {
       {/* 13: Semantic HTML */}
       <TrygSlide title="Semantic Web and Semantic HTML">
         <SemanticWeb />
+      </TrygSlide>
+
+      {/* 12: Semantic HTML */}
+      <TrygSlide title="Semantic HTML">
+        <SemanticHTML />
       </TrygSlide>
     </Deck>
   );
