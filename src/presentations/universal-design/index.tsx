@@ -17,6 +17,7 @@ import CurbCutEffect from "./slides/9/CurbCutEffect";
 import ScreenReaders from "./slides/10/ScreenReader";
 import SemanticWeb from "./slides/11/SemanticWeb";
 import SemanticHTML from "./slides/12/SemanticHTML";
+import DivAsHTML from "./slides/13/DivAsHTML";
 
 const DesignEchoSystem = () => {
   return (
@@ -89,6 +90,11 @@ const DesignEchoSystem = () => {
       {/* 12: Semantic HTML */}
       <TrygSlide title="Semantic HTML">
         <SemanticHTML />
+      </TrygSlide>
+
+      {/* 13: DIVs are not HTML */}
+      <TrygSlide title="DIVs are not button">
+        <DivAsHTML />
       </TrygSlide>
     </Deck>
   );

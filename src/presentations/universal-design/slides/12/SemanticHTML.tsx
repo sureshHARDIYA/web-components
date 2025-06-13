@@ -1,6 +1,5 @@
-import { Appear, Box, CodePane, Image } from "spectacle";
+import { Box, Image } from "spectacle";
 
-import { customTheme } from "@/slides/7/customTheme";
 import HTML from "./html.png";
 
 const SemanticHTML = () => {
