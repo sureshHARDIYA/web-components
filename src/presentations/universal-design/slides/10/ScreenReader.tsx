@@ -6,38 +6,35 @@ import { customTheme } from "@/slides/7/customTheme";
 const ScreenReaders = () => {
   return (
     <div className="">
-      <p-carousel heading="Screen Readers">
-        <div className="grid place-content-center h-[150px] bg-slate-200 p-4 text-black text-xl">
-          Screen readers convert digital text into synthesized speech. They
-          empower users to hear content and navigate with the keyboard.
-        </div>
-        <div className="grid place-content-center h-[150px] bg-slate-200 p-4 text-black text-xl">
-          Screen Readers:
-          <p-text-list>
-            <p-text-list-item>Read all content</p-text-list-item>
-            <p-text-list-item>Display a list of links</p-text-list-item>
-            <p-text-list-item>Display a list of headings</p-text-list-item>
-          </p-text-list>
-        </div>
-        <div className="grid place-content-center h-[370px] bg-slate-200 p-4 text-black text-xl">
-          <span className="font-bold pb-6">Popular Screen Readers</span>
+      <p-tabs size="medium">
+        <p-tabs-item label="Screen Readers">
+          <p-text size="medium">
+            Screen readers convert digital text into synthesized speech. They
+            empower users to hear content and navigate with the keyboard.
+          </p-text>
+        </p-tabs-item>
+        <p-tabs-item label="What does it read?">
+          <p-text size="medium">
+            Screen Readers:
+            <p-text-list>
+              <p-text-list-item>Read all content</p-text-list-item>
+              <p-text-list-item>Display a list of links</p-text-list-item>
+              <p-text-list-item>Display a list of headings</p-text-list-item>
+            </p-text-list>
+          </p-text>
+        </p-tabs-item>
+        <p-tabs-item label="Popular Screen Readers">
           <Image src={Screens} className="pb-4" />
-        </div>
-
-        <div className="grid place-content-center bg-slate-200 p-4 text-black text-xl">
-          <span className="font-bold pb-6">Alternative Text</span>
+        </p-tabs-item>
+        <p-tabs-item label="Alternative Text">
           <div className="flex w-full items-center mb-4">
             <p-icon></p-icon> By default, when a screen reader encounters an
             image, if it can't find alt text it will read aloud the file's name.
           </div>
-          <CodePane
-            language="html"
-            theme={customTheme}
-            highlightRanges={[1, 9, [11, 13]]}
-          >
+          <CodePane language="html" theme={customTheme}>
             {`
-            <!-- Screen reader will read the filename "image.jpg" or may announce it as 
-            "graphic" depending on the browser/screen reader -->
+            <!-- Screen reader will read the filename "image.jpg" 
+            or may announce it as "graphic" depending on the browser/screen reader -->
             <img src="image.jpg">
 
             <!-- Screen reader will read: "a puppy in the park" -->
@@ -48,8 +45,8 @@ const ScreenReaders = () => {
 
             `}
           </CodePane>
-        </div>
-      </p-carousel>
+        </p-tabs-item>
+      </p-tabs>
     </div>
   );
 };

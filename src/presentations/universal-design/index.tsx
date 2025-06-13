@@ -15,6 +15,7 @@ import ConformanceLevel from "./slides/7/Specifications";
 import ScreenReader, { ScreenReader2 } from "./slides/8/ScreenReader";
 import CurbCutEffect from "./slides/9/CurbCutEffect";
 import ScreenReaders from "./slides/10/ScreenReader";
+import SemanticWeb from "./slides/11/SemanticWeb";
 
 const DesignEchoSystem = () => {
   return (
@@ -75,8 +76,13 @@ const DesignEchoSystem = () => {
       </TrygSlide>
 
       {/* 12: Screen readers */}
-      <TrygSlide>
+      <TrygSlide title="Screen readers">
         <ScreenReaders />
+      </TrygSlide>
+
+      {/* 13: Semantic HTML */}
+      <TrygSlide title="Semantic Web and Semantic HTML">
+        <SemanticWeb />
       </TrygSlide>
     </Deck>
   );
