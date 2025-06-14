@@ -19,6 +19,7 @@ import SemanticWeb from "./slides/11/SemanticWeb";
 import SemanticHTML from "./slides/12/SemanticHTML";
 import DivAsHTML from "./slides/13/DivAsHTML";
 import FormLabels from "./slides/14/FormElements";
+import FocusHandling from "./slides/15/FcousManagement";
 
 const DesignEchoSystem = () => {
   return (
@@ -105,7 +106,7 @@ const DesignEchoSystem = () => {
 
       {/* 15: Focus Management */}
       <TrygSlide title="Focus Handling & Management">
-        <FormLabels />
+        <FocusHandling />
       </TrygSlide>
     </Deck>
   );
