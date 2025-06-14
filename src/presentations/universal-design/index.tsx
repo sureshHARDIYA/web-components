@@ -104,7 +104,7 @@ const DesignEchoSystem = () => {
       </TrygSlide>
 
       {/* 15: Focus Management */}
-      <TrygSlide title="Focus Management">
+      <TrygSlide title="Focus Handling & Management">
         <FormLabels />
       </TrygSlide>
     </Deck>
