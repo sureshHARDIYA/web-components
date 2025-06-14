@@ -18,6 +18,7 @@ import ScreenReaders from "./slides/10/ScreenReader";
 import SemanticWeb from "./slides/11/SemanticWeb";
 import SemanticHTML from "./slides/12/SemanticHTML";
 import DivAsHTML from "./slides/13/DivAsHTML";
+import FormLabels from "./slides/14/FormElements";
 
 const DesignEchoSystem = () => {
   return (
@@ -95,6 +96,16 @@ const DesignEchoSystem = () => {
       {/* 13: DIVs are not HTML */}
       <TrygSlide title="DIVs are not button">
         <DivAsHTML />
+      </TrygSlide>
+
+      {/* 14: FormLabels */}
+      <TrygSlide title="Form Labels">
+        <FormLabels />
+      </TrygSlide>
+
+      {/* 15: Focus Management */}
+      <TrygSlide title="Focus Management">
+        <FormLabels />
       </TrygSlide>
     </Deck>
   );
