@@ -1,4 +1,4 @@
-import { Appear, Box, CodePane } from "spectacle";
+import { Box, CodePane } from "spectacle";
 
 import tomorrow from "react-syntax-highlighter/dist/cjs/styles/prism/tomorrow";
 
