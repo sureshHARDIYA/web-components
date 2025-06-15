@@ -13,7 +13,7 @@ const CurbCutEffect = () => {
           <Image src={Effect} />
         </Box>
       </Appear>
-      <Appear priority={1}>
+      <Appear priority={0}>
         <Box
           backgroundColor="transparent"
           className="flex justify-center  items-left text-black flex-col"
@@ -24,7 +24,7 @@ const CurbCutEffect = () => {
             benefiting a much wider audience.
           </p>
 
-          <Appear priority={3}>
+          <Appear priority={1}>
             <div className="px-6 mt-6">
               <p-text-list>
                 <p-text-list-item className="text-white">

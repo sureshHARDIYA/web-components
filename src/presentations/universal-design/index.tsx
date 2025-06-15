@@ -3,24 +3,25 @@ import { Deck } from "spectacle";
 import theme from "@/utils/theme";
 
 import template from "@/theme/template";
-import { TrygSlide } from "@/components/TrygSlide";
 import DESTitle from "./slides/1/Title";
 import Agenda from "./slides/2/Agenda";
 import Agenda2 from "./slides/3/Agenda";
-import UniversalDesign from "./slides/4/UniversalDesign";
-import Principles from "./slides/5/Principle";
-import Compliance from "./slides/6/Compliance";
 import Consquences from "./slides/6/Second";
-import ConformanceLevel from "./slides/7/Specifications";
-import ScreenReader, { ScreenReader2 } from "./slides/8/ScreenReader";
-import CurbCutEffect from "./slides/9/CurbCutEffect";
-import ScreenReaders from "./slides/10/ScreenReader";
-import SemanticWeb from "./slides/11/SemanticWeb";
-import SemanticHTML from "./slides/12/SemanticHTML";
+import Principles from "./slides/5/Principle";
 import DivAsHTML from "./slides/13/DivAsHTML";
+import Compliance from "./slides/6/Compliance";
+import SemanticWeb from "./slides/11/SemanticWeb";
 import FormLabels from "./slides/14/FormElements";
+import { TrygSlide } from "@/components/TrygSlide";
+import ScreenReaders from "./slides/10/ScreenReader";
+import SemanticHTML from "./slides/12/SemanticHTML";
+import CurbCutEffect from "./slides/9/CurbCutEffect";
+import ConformanceLevel from "./slides/7/Specifications";
 import FocusHandling from "./slides/15/FcousManagement";
+import UniversalDesign from "./slides/4/UniversalDesign";
 import SkipLinks2, { SkipLinks1 } from "./slides/16/SkipLinks";
+import ScreenReader, { ScreenReader2 } from "./slides/8/ScreenReader";
+import Tabbable from "./slides/17/Tab";
 
 const DesignEchoSystem = () => {
   return (
@@ -117,6 +118,11 @@ const DesignEchoSystem = () => {
 
       <TrygSlide title="Skip Links">
         <SkipLinks2 />
+      </TrygSlide>
+
+      {/* 16: Tabs */}
+      <TrygSlide title="Tab Navigation">
+        <Tabbable />
       </TrygSlide>
     </Deck>
   );
