@@ -4,16 +4,12 @@ import SkipLinksImage from "./skip.gif";
 
 export const SkipLinks1 = () => {
   return (
-    <div>
-      <Appear>
-        <Image
-          src={SkipLinksImage}
-          width="100%"
-          height={650}
-          alt="Skip Links Example"
-        />
-      </Appear>
-    </div>
+    <Image
+      src={SkipLinksImage}
+      width="100%"
+      height={650}
+      alt="Skip Links Example"
+    />
   );
 };
 

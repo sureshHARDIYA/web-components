@@ -20,8 +20,7 @@ import SemanticHTML from "./slides/12/SemanticHTML";
 import DivAsHTML from "./slides/13/DivAsHTML";
 import FormLabels from "./slides/14/FormElements";
 import FocusHandling from "./slides/15/FcousManagement";
-import SkipLinks, { SkipLinks1 } from "./slides/16/SkipLinks";
-import SkipLinks2 from "./slides/16/SkipLinks";
+import SkipLinks2, { SkipLinks1 } from "./slides/16/SkipLinks";
 
 const DesignEchoSystem = () => {
   return (
