@@ -1,24 +1,23 @@
-import { Appear, Box, CodePane } from "spectacle";
+import { Appear, Image } from "spectacle";
 
-import tomorrow from "react-syntax-highlighter/dist/cjs/styles/prism/tomorrow";
+import SkipLinksImage from "./skip.gif";
 
-const customTheme = {
-  ...tomorrow,
-  'pre[class*="language-"]': {
-    ...tomorrow['pre[class*="language-"]'],
-    fontSize: "18px",
-    overflow: "auto",
-    lineHeight: "0.9",
-  },
-  'code[class*="language-"]': {
-    ...tomorrow['code[class*="language-"]'],
-    fontSize: "18px",
-    overflow: "auto",
-    lineHeight: "0.9",
-  },
+export const SkipLinks1 = () => {
+  return (
+    <div>
+      <Appear>
+        <Image
+          src={SkipLinksImage}
+          width="100%"
+          height={650}
+          alt="Skip Links Example"
+        />
+      </Appear>
+    </div>
+  );
 };
 
-const SkipLinks = () => {
+const SkipLinks2 = () => {
   return (
     <div>
       <Appear>
@@ -72,4 +71,4 @@ const SkipLinks = () => {
   );
 };
 
-export default SkipLinks;
+export default SkipLinks2;
