@@ -35,7 +35,12 @@ const FormLabels = () => {
           <br />
           <br />
           <CodePane language="html" theme={customTheme}>
-            {`<label>`}
+            {`<label>First Name</label>
+            
+<p>First Name </p>
+
+<div>First Name </div>
+            `}
           </CodePane>
         </Box>
       </p-tabs-item>
