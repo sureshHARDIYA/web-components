@@ -294,6 +294,99 @@ const SemanticHTML = () => {
             </Box>
           </div>
         </p-tabs-item>
+
+        <p-tabs-item label="Landmarks">
+          <Box backgroundColor="primary" className="p-4 flex flex-col gap-6">
+            <p-table caption="Common HTML Landmark Elements">
+              <p-table-head>
+                <p-table-head-row>
+                  <p-table-head-cell>Element</p-table-head-cell>
+                  <p-table-head-cell>Purpose</p-table-head-cell>
+                  <p-table-head-cell>ARIA Role</p-table-head-cell>
+                  <p-table-head-cell>Multiple Allowed?</p-table-head-cell>
+                </p-table-head-row>
+              </p-table-head>
+              <p-table-body>
+                <p-table-row>
+                  <p-table-cell>
+                    <code>{"<main>"}</code>
+                  </p-table-cell>
+                  <p-table-cell>Main content of the page</p-table-cell>
+                  <p-table-cell>
+                    <code>main</code>
+                  </p-table-cell>
+                  <p-table-cell>Only one per page</p-table-cell>
+                </p-table-row>
+                <p-table-row>
+                  <p-table-cell>
+                    <code>{"<header>"}</code>
+                  </p-table-cell>
+                  <p-table-cell>
+                    Introductory content or navigation aid
+                  </p-table-cell>
+                  <p-table-cell>
+                    <code>banner</code>
+                  </p-table-cell>
+                  <p-table-cell>Only one per page (at top level)</p-table-cell>
+                </p-table-row>
+                <p-table-row>
+                  <p-table-cell>
+                    <code>{"<nav>"}</code>
+                  </p-table-cell>
+                  <p-table-cell>
+                    Primary or secondary navigation links
+                  </p-table-cell>
+                  <p-table-cell>
+                    <code>navigation</code>
+                  </p-table-cell>
+                  <p-table-cell>Yes</p-table-cell>
+                </p-table-row>
+                <p-table-row>
+                  <p-table-cell>
+                    <code>{"<aside>"}</code>
+                  </p-table-cell>
+                  <p-table-cell>Complementary or side content</p-table-cell>
+                  <p-table-cell>
+                    <code>complementary</code>
+                  </p-table-cell>
+                  <p-table-cell>Yes</p-table-cell>
+                </p-table-row>
+                <p-table-row>
+                  <p-table-cell>
+                    <code>{"<footer>"}</code>
+                  </p-table-cell>
+                  <p-table-cell>
+                    Footer content (copyright, links, etc.)
+                  </p-table-cell>
+                  <p-table-cell>
+                    <code>contentinfo</code>
+                  </p-table-cell>
+                  <p-table-cell>Only one per page (at top level)</p-table-cell>
+                </p-table-row>
+                <p-table-row>
+                  <p-table-cell>
+                    <code>{'<form role="search">'}</code>
+                  </p-table-cell>
+                  <p-table-cell>Search functionality</p-table-cell>
+                  <p-table-cell>
+                    <code>search</code>
+                  </p-table-cell>
+                  <p-table-cell>Yes</p-table-cell>
+                </p-table-row>
+                <p-table-row>
+                  <p-table-cell>
+                    <code>{"<section>"}</code>
+                  </p-table-cell>
+                  <p-table-cell>Standalone themed content</p-table-cell>
+                  <p-table-cell>
+                    <code>region</code>
+                  </p-table-cell>
+                  <p-table-cell>Yes</p-table-cell>
+                </p-table-row>
+              </p-table-body>
+            </p-table>
+          </Box>
+        </p-tabs-item>
       </p-tabs>
     </div>
   );
