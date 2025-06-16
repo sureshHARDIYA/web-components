@@ -25,10 +25,6 @@ const Agenda2 = () => {
             </TTD>
           </TTR>
           <TTR>
-            <TTD>Understanding Color Contrast</TTD>
-            <TTD>Tools for Checking Contrast Ratio</TTD>
-          </TTR>
-          <TTR>
             <TTD>Accessibility Tools</TTD>
             <TTD>
               several accessibility tools for running manual accessibility tests
