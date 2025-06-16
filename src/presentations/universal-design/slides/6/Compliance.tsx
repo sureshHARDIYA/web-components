@@ -28,7 +28,7 @@ const Compliance = () => {
           heading-tag="h3"
           state="info"
           className="w-full"
-          description="Requires: Conformance to WCAG 2.1 Level AA"
+          description="Requires: Conformance to WCAG (Web Content Accessibility Guidelines) 2.1 Level AA"
         ></p-inline-notification>
       </Appear>
 
@@ -41,7 +41,10 @@ const Compliance = () => {
           // description="Norway: Likestillings- og diskrimineringsloven (Equality and Anti-Discrimination Act)"
         >
           <span>
-            <p-icon></p-icon> Norway: Likestillings- og diskrimineringsloven
+            <p-icon></p-icon> Norway:{" "}
+            <span className="underline italic text-green-800">
+              Likestillings- og diskrimineringsloven{" "}
+            </span>
             (Equality and Anti-Discrimination Act)
           </span>
 

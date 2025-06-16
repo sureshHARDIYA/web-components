@@ -36,8 +36,12 @@ const Agenda2 = () => {
             <TTD>Resources and courses on Universal Design </TTD>
           </TTR>
           <TTR>
-            <TTD>Wrapping up with styling web components</TTD>
-            <TTD>How to style web components </TTD>
+            <TTD>
+              <del>Wrapping up with styling web components</del>
+            </TTD>
+            <TTD>
+              How to style web components <sub>(Future session...)</sub>{" "}
+            </TTD>
           </TTR>
         </tbody>
       </TTable>

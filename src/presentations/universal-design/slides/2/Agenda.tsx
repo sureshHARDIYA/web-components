@@ -8,7 +8,7 @@ const Agenda = () => {
         <tbody>
           <TTR>
             <TTD>Universal Design</TTD>
-            <TTD>Universal Design vs Accessiblity</TTD>
+            <TTD>Universal Design vs Accessibility </TTD>
           </TTR>
           <TTR>
             <TTD>Principles of Universal Design</TTD>

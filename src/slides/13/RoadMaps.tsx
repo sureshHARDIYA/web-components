@@ -37,7 +37,7 @@ const RoadMaps = () => {
       <p-checkbox-wrapper label="Automated Testing">
         <input type="checkbox" name="some-name" />
       </p-checkbox-wrapper>
-      <p-checkbox-wrapper label="Automated Accessiblity Testing">
+      <p-checkbox-wrapper label="Automated Accessibility  Testing">
         <input type="checkbox" name="some-name" />
       </p-checkbox-wrapper>
       <p-checkbox-wrapper label="Prepare components for SSR">
