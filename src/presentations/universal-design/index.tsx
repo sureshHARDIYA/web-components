@@ -22,6 +22,7 @@ import UniversalDesign from "./slides/4/UniversalDesign";
 import SkipLinks2, { SkipLinks1 } from "./slides/16/SkipLinks";
 import ScreenReader, { ScreenReader2 } from "./slides/8/ScreenReader";
 import Tabbable from "./slides/17/Tab";
+import ARIALabels from "./slides/18/WAI";
 
 const DesignEchoSystem = () => {
   return (
@@ -120,9 +121,14 @@ const DesignEchoSystem = () => {
         <SkipLinks2 />
       </TrygSlide>
 
-      {/* 16: Tabs */}
+      {/* 17: Tabs */}
       <TrygSlide title="Tab Navigation">
         <Tabbable />
+      </TrygSlide>
+
+      {/* 18: Tabs */}
+      <TrygSlide title="WAI-ARIA Vs. WCAG">
+        <ARIALabels />
       </TrygSlide>
     </Deck>
   );
