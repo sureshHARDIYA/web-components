@@ -26,7 +26,7 @@ const Summary = () => {
       <br />
       <Appear>
         <p-inline-notification
-          heading="Accessiblity first"
+          heading="Accessibility  first"
           heading-tag="h3"
         ></p-inline-notification>
 
