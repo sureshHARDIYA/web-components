@@ -29,6 +29,7 @@ import Tooling, {
   Tooling3,
   Tooling4,
 } from "./slides/19/Tooling";
+import Summary from "./slides/20/Summar";
 
 const DesignEchoSystem = () => {
   return (
@@ -156,6 +157,11 @@ const DesignEchoSystem = () => {
 
       <TrygSlide title="Authoring tools...">
         <Tooling4 />
+      </TrygSlide>
+
+      {/* 20: Resources */}
+      <TrygSlide title="Resources">
+        <Summary />
       </TrygSlide>
     </Deck>
   );
