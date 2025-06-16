@@ -23,6 +23,7 @@ import SkipLinks2, { SkipLinks1 } from "./slides/16/SkipLinks";
 import ScreenReader, { ScreenReader2 } from "./slides/8/ScreenReader";
 import Tabbable from "./slides/17/Tab";
 import ARIALabels from "./slides/18/WAI";
+import Tooling, { Tooling1, Tooling2, Tooling3 } from "./slides/19/Tooling";
 
 const DesignEchoSystem = () => {
   return (
@@ -129,6 +130,23 @@ const DesignEchoSystem = () => {
       {/* 18: Tabs */}
       <TrygSlide title="WAI-ARIA Vs. WCAG">
         <ARIALabels />
+      </TrygSlide>
+
+      {/* 19: Testing and Tooling */}
+      <TrygSlide title="Testing and Tooling">
+        <Tooling />
+      </TrygSlide>
+
+      <TrygSlide title="Google Lighthouse">
+        <Tooling1 />
+      </TrygSlide>
+
+      <TrygSlide title="Wave by WebAIM">
+        <Tooling2 />
+      </TrygSlide>
+
+      <TrygSlide title="Axe-core by Deque">
+        <Tooling3 />
       </TrygSlide>
     </Deck>
   );
