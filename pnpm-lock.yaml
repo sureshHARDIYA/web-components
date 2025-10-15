@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@porsche-design-system/components-js':
-        specifier: ^3.19.0
-        version: 3.27.3
+        specifier: ^3.29.0
+        version: 3.29.0(tailwindcss@3.4.17)
       '@porsche-design-system/components-react':
-        specifier: ^3.19.0
-        version: 3.27.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^3.29.0
+        version: 3.29.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tailwindcss@3.4.17)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -59,7 +59,7 @@ importers:
         version: 18.3.5(@types/react@18.3.26)
       '@vitejs/plugin-react':
         specifier: ^4.3.2
-        version: 4.3.4(vite@6.2.3(@types/node@22.13.14)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0))
+        version: 4.3.4(vite@6.3.6(@types/node@22.13.14)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0))
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.21(postcss@8.5.3)
@@ -88,8 +88,8 @@ importers:
         specifier: ^8.7.0
         version: 8.28.0(eslint@9.37.0(jiti@1.21.7))(typescript@5.8.2)
       vite:
-        specifier: ^6.2.3
-        version: 6.2.3(@types/node@22.13.14)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0)
+        specifier: ^6.3.6
+        version: 6.3.6(@types/node@22.13.14)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0)
 
 packages:
 
@@ -1104,32 +1104,38 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@porsche-design-system/components-js@3.27.3':
-    resolution: {integrity: sha512-nvdKnU+Ddsbni88kI0vRVPAxLE/SDnQ08BxQvx+vTmvNCsp4N1maQW9mQnPSXKbZLm47nBZBWMblLwPd02Qb7w==}
+  '@porsche-design-system/components-js@3.29.0':
+    resolution: {integrity: sha512-L6J9VynouE1w5SRvQgX/sos30D9A6SnO/9cFuD4Nu3KHQRAe3hu/1yDSckEJ/W/6tlRrToR3R5XwuGj5xPv0sQ==}
     peerDependencies:
-      ag-grid-community: '>= 33.0.0 <34.0.0'
-      ag-grid-enterprise: '>= 33.0.0 <34.0.0'
+      ag-grid-community: '>= 33.0.0 <35.0.0'
+      ag-grid-enterprise: '>= 33.0.0 <35.0.0'
+      tailwindcss: '>= 4.0.0 <5.0.0'
     peerDependenciesMeta:
       ag-grid-community:
         optional: true
       ag-grid-enterprise:
         optional: true
+      tailwindcss:
+        optional: true
 
-  '@porsche-design-system/components-react@3.27.3':
-    resolution: {integrity: sha512-bleWdXvmIG1LUOgiCrvPCMGR9PE5oS9PdkJD7wiOrekZRigOIrSmJ9+FvXQG0gqd1W8aXenGahTtt37FC4KeFg==}
+  '@porsche-design-system/components-react@3.29.0':
+    resolution: {integrity: sha512-RHLPlqTIvQQAq9YLIKAvhy+gw24aStYmOD+IAoHVCleILkZC0+1u8kkF4qNjnOicGM7Q3AOVZP409rRLZhZy2w==}
     hasBin: true
     peerDependencies:
-      ag-grid-community: '>= 33.0.0 <34.0.0'
-      ag-grid-enterprise: '>= 33.0.0 <34.0.0'
-      ag-grid-react: '>= 33.0.0 <34.0.0'
+      ag-grid-community: '>= 33.0.0 <35.0.0'
+      ag-grid-enterprise: '>= 33.0.0 <35.0.0'
+      ag-grid-react: '>= 33.0.0 <35.0.0'
       react: '>=19.0.0 <20.0.0'
       react-dom: '>=19.0.0 <20.0.0'
+      tailwindcss: '>= 4.0.0 <5.0.0'
     peerDependenciesMeta:
       ag-grid-community:
         optional: true
       ag-grid-enterprise:
         optional: true
       ag-grid-react:
+        optional: true
+      tailwindcss:
         optional: true
 
   '@radix-ui/react-compose-refs@1.1.1':
@@ -1657,11 +1663,6 @@ packages:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
-
-  acorn@8.14.1:
-    resolution: {integrity: sha512-OvQ/2pUDKmgfCg++xsTX1wGxfTaszcHVcTctW4UJB4hibJx2HXxxO5UmVgyjMa+ZDsiaf5wWLXYpRWMmBI0QHg==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
 
   acorn@8.15.0:
     resolution: {integrity: sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==}
@@ -2255,6 +2256,15 @@ packages:
 
   fb-watchman@2.0.2:
     resolution: {integrity: sha512-p5161BqbuCaSnB8jIbzQHOlpgsPmK5rJVDfDKO91Axs5NC1uu3HRQm6wt9cd9/+GtQQIO53JdGXXoyDpTAsgYA==}
+
+  fdir@6.5.0:
+    resolution: {integrity: sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      picomatch: ^3 || ^4
+    peerDependenciesMeta:
+      picomatch:
+        optional: true
 
   file-entry-cache@8.0.0:
     resolution: {integrity: sha512-XXTUwCvisa5oacNGRP9SfNtYBNAMi+RPwBFmblZEF7N7swHYQS6/Zfk7SRwx4D5j3CH211YNRco1DEMNVfZCnQ==}
@@ -3050,6 +3060,10 @@ packages:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
 
+  picomatch@4.0.3:
+    resolution: {integrity: sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==}
+    engines: {node: '>=12'}
+
   pify@2.3.0:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
     engines: {node: '>=0.10.0'}
@@ -3652,6 +3666,10 @@ packages:
   tiny-slider@2.9.4:
     resolution: {integrity: sha512-LAs2kldWcY+BqCKw4kxd4CMx2RhWrHyEePEsymlOIISTlOVkjfK40sSD7ay73eKXBLg/UkluAZpcfCstimHXew==}
 
+  tinyglobby@0.2.15:
+    resolution: {integrity: sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==}
+    engines: {node: '>=12.0.0'}
+
   tmp@0.2.3:
     resolution: {integrity: sha512-nZD7m9iCPC5g0pYmcaxogYKggSfLsdxl8of3Q/oIbqCqLLIO9IAF0GWjX1z9NZRHPiXv8Wex4yDCaZsgEw0Y8w==}
     engines: {node: '>=14.14'}
@@ -3827,8 +3845,8 @@ packages:
   vfile@4.2.1:
     resolution: {integrity: sha512-O6AE4OskCG5S1emQ/4gl8zK586RqA3srz3nfK/Viy0UPToBc5Trp9BVFb1u0CjsKrAWwnpr4ifM/KBXPWwJbCA==}
 
-  vite@6.2.3:
-    resolution: {integrity: sha512-IzwM54g4y9JA/xAeBPNaDXiBF8Jsgl3VBQ2YQ/wOY6fyW3xMdSoltIV3Bo59DErdqdE6RxUfv8W69DvUorE4Eg==}
+  vite@6.3.6:
+    resolution: {integrity: sha512-0msEVHJEScQbhkbVTb/4iHZdJ6SXp/AvxL2sjwYQFfBqleHtnCqv1J3sa9zbWz/6kW1m9Tfzn92vW+kZ1WV6QA==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
     peerDependencies:
@@ -5133,13 +5151,17 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@porsche-design-system/components-js@3.27.3': {}
+  '@porsche-design-system/components-js@3.29.0(tailwindcss@3.4.17)':
+    optionalDependencies:
+      tailwindcss: 3.4.17
 
-  '@porsche-design-system/components-react@3.27.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@porsche-design-system/components-react@3.29.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tailwindcss@3.4.17)':
     dependencies:
-      '@porsche-design-system/components-js': 3.27.3
+      '@porsche-design-system/components-js': 3.29.0(tailwindcss@3.4.17)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
+    optionalDependencies:
+      tailwindcss: 3.4.17
 
   '@radix-ui/react-compose-refs@1.1.1(@types/react@18.3.26)(react@18.3.1)':
     dependencies:
@@ -5713,14 +5735,14 @@ snapshots:
       '@typescript-eslint/types': 8.28.0
       eslint-visitor-keys: 4.2.0
 
-  '@vitejs/plugin-react@4.3.4(vite@6.2.3(@types/node@22.13.14)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0))':
+  '@vitejs/plugin-react@4.3.4(vite@6.3.6(@types/node@22.13.14)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0))':
     dependencies:
       '@babel/core': 7.26.10
       '@babel/plugin-transform-react-jsx-self': 7.25.9(@babel/core@7.26.10)
       '@babel/plugin-transform-react-jsx-source': 7.25.9(@babel/core@7.26.10)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 6.2.3(@types/node@22.13.14)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0)
+      vite: 6.3.6(@types/node@22.13.14)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -5736,8 +5758,6 @@ snapshots:
   acorn-jsx@5.3.2(acorn@8.15.0):
     dependencies:
       acorn: 8.15.0
-
-  acorn@8.14.1: {}
 
   acorn@8.15.0: {}
 
@@ -6403,6 +6423,10 @@ snapshots:
   fb-watchman@2.0.2:
     dependencies:
       bser: 2.1.1
+
+  fdir@6.5.0(picomatch@4.0.3):
+    optionalDependencies:
+      picomatch: 4.0.3
 
   file-entry-cache@8.0.0:
     dependencies:
@@ -7335,6 +7359,8 @@ snapshots:
 
   picomatch@2.3.1: {}
 
+  picomatch@4.0.3: {}
+
   pify@2.3.0: {}
 
   pify@4.0.1: {}
@@ -8088,7 +8114,7 @@ snapshots:
   terser@5.39.0:
     dependencies:
       '@jridgewell/source-map': 0.3.6
-      acorn: 8.14.1
+      acorn: 8.15.0
       commander: 2.20.3
       source-map-support: 0.5.21
 
@@ -8117,6 +8143,11 @@ snapshots:
       tiny-slider: 2.9.4
 
   tiny-slider@2.9.4: {}
+
+  tinyglobby@0.2.15:
+    dependencies:
+      fdir: 6.5.0(picomatch@4.0.3)
+      picomatch: 4.0.3
 
   tmp@0.2.3: {}
 
@@ -8277,11 +8308,14 @@ snapshots:
       unist-util-stringify-position: 2.0.3
       vfile-message: 2.0.4
 
-  vite@6.2.3(@types/node@22.13.14)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0):
+  vite@6.3.6(@types/node@22.13.14)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0):
     dependencies:
       esbuild: 0.25.1
+      fdir: 6.5.0(picomatch@4.0.3)
+      picomatch: 4.0.3
       postcss: 8.5.3
       rollup: 4.37.0
+      tinyglobby: 0.2.15
     optionalDependencies:
       '@types/node': 22.13.14
       fsevents: 2.3.3
