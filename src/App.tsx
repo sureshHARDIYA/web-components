@@ -4,6 +4,7 @@ import WebComponents from "./presentations/web-components";
 import DesignEchoSystem from "./presentations/design-echo-system";
 import NordicDesignSystem from "./presentations/nordic-design-system";
 import UniversalDesign from "./presentations/universal-design";
+import UniversalDesignChecklist from "./presentations/uu-checklist";
 
 function App() {
   return (
@@ -16,6 +17,10 @@ function App() {
         />
         <Route path="/nordic-design-system" element={<NordicDesignSystem />} />
         <Route path="/universal-design" element={<UniversalDesign />} />
+        <Route
+          path="/universal-design-checklist"
+          element={<UniversalDesignChecklist />}
+        />
       </Routes>
     </BrowserRouter>
   );

@@ -1,0 +1,244 @@
+{
+  "general": [
+    {
+      "title": "Follow WCAG 2.1 AA (plan for 2.2)",
+      "notes": "<a href='https://www.w3.org/WAI/WCAG21/quickref/' target='_blank' rel='noopener'>WCAG 2.1 Quick Reference</a>"
+    },
+    {
+      "title": "Comply with Norwegian UU law",
+      "notes": "Forskrift om universell utforming av IKT-løsninger (lovpålagt i Norge)"
+    },
+    {
+      "title": "Design mobile‑first & responsive",
+      "notes": "Test across common breakpoints (sm/md/lg/xl)"
+    },
+    {
+      "title": "Support light & dark modes with accessible contrast",
+      "notes": "Respect system preference; ensure focus states visible"
+    },
+    {
+      "title": "Don’t rely on color alone",
+      "notes": "Use text, shapes, or icons in addition to color"
+    }
+  ],
+  "semantic_structure": [
+    {
+      "title": "Use semantic landmarks",
+      "notes": "Use &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;footer&gt;"
+    },
+    {
+      "title": "One <h1>; per page; logical heading order",
+      "notes": "Avoid skipping heading levels without reason"
+    },
+    {
+      "title": "Meaningful alt text for images",
+      "notes": "Decorative images use empty alt: <code>alt=\"\"</code>"
+    },
+    {
+      "title": "Prefer native controls",
+      "notes": "Use &lt;button&gt;, &lt;a&gt;, &lt;label&gt; instead of clickable &lt;div&gt;"
+    },
+    {
+      "title": "Set correct language",
+      "notes": "Use <code>&lt;html lang=\"no\"&gt;</code> (or relevant language)"
+    }
+  ],
+  "keyboard_focus": [
+    {
+      "title": "All functionality is keyboard accessible",
+      "notes": "Tab order matches visual order; no traps"
+    },
+    {
+      "title": "Keyboard activation works",
+      "notes": "Support <kbd>Enter</kbd> and <kbd>Space</kbd> on interactive components"
+    },
+    {
+      "title": "Visible focus indicators",
+      "notes": "Use <code>:focus-visible</code>; do not remove outlines"
+    },
+    {
+      "title": "Manage focus in dialogs and overlays",
+      "notes": "Trap focus and return to trigger on close"
+    },
+    {
+      "title": "Skip links and landmark nav",
+      "notes": "Provide a ‘Skip to content’ link at page start"
+    }
+  ],
+  "aria": [
+    {
+      "title": "Use ARIA sparingly—native first",
+      "notes": "Add ARIA only when native semantics are insufficient"
+    },
+    {
+      "title": "Label icon-only controls",
+      "notes": "Use <code>aria-label</code> or <code>aria-labelledby</code>"
+    },
+    {
+      "title": "Announce dynamic updates",
+      "notes": "Use <code>aria-live</code>, <code>role=\"status\"</code>, or <code>role=\"alert\"</code>"
+    },
+    {
+      "title": "Apply correct ARIA patterns",
+      "notes": "<a href='https://www.w3.org/TR/wai-aria-practices/' target='_blank' rel='noopener'>ARIA Authoring Practices</a> for tabs, menus, accordions"
+    },
+    {
+      "title": "Avoid invalid roles/states",
+      "notes": "Validate roles and relationships; no duplicate IDs"
+    }
+  ],
+  "forms_validation": [
+    {
+      "title": "Every input has a label",
+      "notes": "Link with <code>for</code> or <code>aria-labelledby</code>; placeholders aren’t labels"
+    },
+    {
+      "title": "Group related fields",
+      "notes": "Use &lt;fieldset&gt; with &lt;legend&gt; for radios/checkbox groups"
+    },
+    {
+      "title": "Clear, specific error messages",
+      "notes": "Associate via <code>aria-describedby</code>; don’t use color-only"
+    },
+    {
+      "title": "Logical tab order &amp; input help",
+      "notes": "Provide inline hints; preserve input on error"
+    },
+    {
+      "title": "Touch target size",
+      "notes": "Minimum ~44px area; adequate spacing between controls"
+    }
+  ],
+  "color_contrast_motion": [
+    {
+      "title": "Text contrast meets WCAG",
+      "notes": "4.5:1 for normal text; 3:1 for large text (≥18.66px regular or 14px bold)"
+    },
+    {
+      "title": "Don’t use color alone",
+      "notes": "Add icons/patterns/text to convey meaning"
+    },
+    {
+      "title": "Respect reduced motion",
+      "notes": "Use <code>@media (prefers-reduced-motion: reduce)</code>"
+    },
+    {
+      "title": "Avoid flashing content",
+      "notes": "No more than 3 flashes per second"
+    },
+    {
+      "title": "Accessible focus in both themes",
+      "notes": "Ensure focus states pass contrast in light/dark"
+    }
+  ],
+  "responsive_mobile": [
+    {
+      "title": "Responsive layout without horizontal scroll",
+      "notes": "Test portrait/landscape on common devices"
+    },
+    {
+      "title": "Relative units for typography",
+      "notes": "Use <code>rem</code>/<code>em</code>; avoid hard px for text"
+    },
+    {
+      "title": "Allow zooming",
+      "notes": "Avoid <code>user-scalable=no</code> and maximum-scale limits"
+    },
+    {
+      "title": "Adequate spacing between touch targets",
+      "notes": "At least ~8px gap between tappable elements"
+    },
+    {
+      "title": "Orientation and reflow",
+      "notes": "Support both orientations; content reflows gracefully"
+    }
+  ],
+  "media_content": [
+    {
+      "title": "Provide captions and transcripts",
+      "notes": "Synchronized captions for video; transcripts for audio"
+    },
+    {
+      "title": "Audio descriptions or alternatives",
+      "notes": "Describe key visual info in videos when needed"
+    },
+    {
+      "title": "Control autoplay",
+      "notes": "Avoid autoplay; if used, provide pause/stop/mute"
+    },
+    {
+      "title": "Time limits &amp; moving content",
+      "notes": "Allow users to extend time; pause moving/scrolling content"
+    },
+    {
+      "title": "Accessible media players",
+      "notes": "Keyboard accessible controls; labeled buttons"
+    }
+  ],
+  "testing_ci": [
+    {
+      "title": "Run automated a11y checks",
+      "notes": "axe, Lighthouse, Pa11y, WAVE in CI"
+    },
+    {
+      "title": "Manual assistive tech testing",
+      "notes": "NVDA/VoiceOver + keyboard-only flows"
+    },
+    {
+      "title": "Storybook a11y addon",
+      "notes": "Use <code>@storybook/addon-a11y</code> for components"
+    },
+    {
+      "title": "Linters and static analysis",
+      "notes": "<code>eslint-plugin-jsx-a11y</code>, <code>stylelint-a11y</code>"
+    },
+    {
+      "title": "Track &amp; fail on critical issues",
+      "notes": "A11y budgets; break the build for regressions"
+    }
+  ],
+  "workflow_governance": [
+    {
+      "title": "Add a11y acceptance criteria to stories",
+      "notes": "Definition of Done includes a11y checks"
+    },
+    {
+      "title": "Create PR templates with a11y checklist",
+      "notes": "Include keyboard, labels, contrast, SR announcements"
+    },
+    {
+      "title": "Design system documentation",
+      "notes": "Token contrast, ARIA patterns, examples, do/don’t"
+    },
+    {
+      "title": "Regular audits (internal &amp; external)",
+      "notes": "Schedule audits and track remediation"
+    },
+    {
+      "title": "Test with users with disabilities",
+      "notes": "Include diverse users in research &amp; usability tests"
+    }
+  ],
+  "mindset": [
+    {
+      "title": "Accessibility as a feature",
+      "notes": "Plan, budget, and prioritize—not a bolt-on fix"
+    },
+    {
+      "title": "Shift left",
+      "notes": "Catch issues in design and component stage"
+    },
+    {
+      "title": "Small, continuous improvements",
+      "notes": "Prevent a11y debt; iterate with telemetry &amp; tests"
+    },
+    {
+      "title": "Educate the team",
+      "notes": "<a href='https://www.w3.org/WAI/tutorials/' target='_blank' rel='noopener'>WAI Tutorials</a> for ongoing learning"
+    },
+    {
+      "title": "Document decisions",
+      "notes": "Explain tradeoffs and rationale for patterns"
+    }
+  ]
+}
