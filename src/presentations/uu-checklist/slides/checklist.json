@@ -17,8 +17,16 @@
       "notes": "Respect system preference; ensure focus states visible"
     },
     {
-      "title": "Don’t rely on color alone",
+      "title": "Don't rely on color alone",
       "notes": "Use text, shapes, or icons in addition to color"
+    },
+    {
+      "title": "Progressive enhancement",
+      "notes": "Core functionality works without JavaScript/CSS"
+    },
+    {
+      "title": "Graceful degradation",
+      "notes": "Fallbacks for unsupported features"
     }
   ],
   "semantic_structure": [
@@ -41,6 +49,18 @@
     {
       "title": "Set correct language",
       "notes": "Use <code>&lt;html lang=\"no\"&gt;</code> (or relevant language)"
+    },
+    {
+      "title": "Use proper list markup",
+      "notes": "Use &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt; for lists; not divs with bullets"
+    },
+    {
+      "title": "Table headers and scope",
+      "notes": "Use &lt;th&gt; with proper scope; associate data cells with headers"
+    },
+    {
+      "title": "Document structure and outline",
+      "notes": "Logical content hierarchy; use sections and articles appropriately"
     }
   ],
   "keyboard_focus": [
@@ -62,7 +82,19 @@
     },
     {
       "title": "Skip links and landmark nav",
-      "notes": "Provide a ‘Skip to content’ link at page start"
+      "notes": "Provide a 'Skip to content' link at page start"
+    },
+    {
+      "title": "Keyboard shortcuts and hotkeys",
+      "notes": "Document and provide alternatives for custom shortcuts"
+    },
+    {
+      "title": "Escape key functionality",
+      "notes": "Escape closes modals, dropdowns, and overlays"
+    },
+    {
+      "title": "Arrow key navigation",
+      "notes": "Support arrow keys in menus, grids, and custom components"
     }
   ],
   "aria": [
@@ -85,12 +117,24 @@
     {
       "title": "Avoid invalid roles/states",
       "notes": "Validate roles and relationships; no duplicate IDs"
+    },
+    {
+      "title": "ARIA relationships and properties",
+      "notes": "Use <code>aria-describedby</code>, <code>aria-controls</code>, <code>aria-expanded</code> correctly"
+    },
+    {
+      "title": "Hidden content from screen readers",
+      "notes": "Use <code>aria-hidden=\"true\"</code> for decorative elements only"
+    },
+    {
+      "title": "ARIA landmarks and regions",
+      "notes": "Use <code>role=\"banner\"</code>, <code>role=\"navigation\"</code>, <code>role=\"main\"</code> when needed"
     }
   ],
   "forms_validation": [
     {
       "title": "Every input has a label",
-      "notes": "Link with <code>for</code> or <code>aria-labelledby</code>; placeholders aren’t labels"
+      "notes": "Link with <code>for</code> or <code>aria-labelledby</code>; placeholders aren't labels"
     },
     {
       "title": "Group related fields",
@@ -98,7 +142,7 @@
     },
     {
       "title": "Clear, specific error messages",
-      "notes": "Associate via <code>aria-describedby</code>; don’t use color-only"
+      "notes": "Associate via <code>aria-describedby</code>; don't use color-only"
     },
     {
       "title": "Logical tab order &amp; input help",
@@ -107,6 +151,18 @@
     {
       "title": "Touch target size",
       "notes": "Minimum ~44px area; adequate spacing between controls"
+    },
+    {
+      "title": "Required field indicators",
+      "notes": "Mark required fields clearly; use <code>aria-required</code>"
+    },
+    {
+      "title": "Input types and constraints",
+      "notes": "Use appropriate input types (email, tel, url, etc.) with validation"
+    },
+    {
+      "title": "Form submission feedback",
+      "notes": "Confirm successful submission; announce errors clearly"
     }
   ],
   "color_contrast_motion": [
@@ -239,6 +295,86 @@
     {
       "title": "Document decisions",
       "notes": "Explain tradeoffs and rationale for patterns"
+    }
+  ],
+  "screen_readers": [
+    {
+      "title": "Test with screen readers",
+      "notes": "NVDA (Windows), JAWS (Windows), VoiceOver (macOS/iOS), TalkBack (Android)"
+    },
+    {
+      "title": "Screen reader navigation",
+      "notes": "Test heading navigation, landmark navigation, and link navigation"
+    },
+    {
+      "title": "Announcements and live regions",
+      "notes": "Ensure important updates are announced appropriately"
+    },
+    {
+      "title": "Screen reader only content",
+      "notes": "Use <code>.sr-only</code> class for screen reader only text when needed"
+    },
+    {
+      "title": "Alternative text for complex images",
+      "notes": "Provide detailed descriptions for charts, graphs, and diagrams"
+    }
+  ],
+  "cognitive_accessibility": [
+    {
+      "title": "Clear and simple language",
+      "notes": "Use plain language; avoid jargon and complex sentences"
+    },
+    {
+      "title": "Consistent navigation and layout",
+      "notes": "Maintain consistent patterns throughout the application"
+    },
+    {
+      "title": "Error prevention and recovery",
+      "notes": "Prevent errors where possible; provide clear recovery options"
+    },
+    {
+      "title": "Help and documentation",
+      "notes": "Provide contextual help and clear instructions"
+    },
+    {
+      "title": "Time limits and interruptions",
+      "notes": "Allow users to extend time limits; warn before timeouts"
+    }
+  ],
+  "performance_accessibility": [
+    {
+      "title": "Fast loading times",
+      "notes": "Optimize for slow connections; consider users with limited bandwidth"
+    },
+    {
+      "title": "Efficient resource usage",
+      "notes": "Minimize memory usage; avoid excessive JavaScript"
+    },
+    {
+      "title": "Progressive loading",
+      "notes": "Load critical content first; lazy load non-essential features"
+    },
+    {
+      "title": "Offline functionality",
+      "notes": "Provide basic functionality when offline when possible"
+    }
+  ],
+  "internationalization": [
+    {
+      "title": "RTL language support",
+      "notes": "Support right-to-left languages with proper CSS and markup"
+    },
+    {
+      "title": "Text expansion",
+      "notes": "Design for text that may be longer in other languages"
+    },
+    {
+      "title": "Cultural considerations",
+      "notes": "Consider cultural differences in color meanings and symbols"
+    },
+    {
+      "title": "Font and character support",
+      "notes": "Ensure fonts support all required characters and scripts"
     }
   ]
 }
